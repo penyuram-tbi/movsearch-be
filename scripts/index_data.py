@@ -81,5 +81,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     index_data(args.csv, args.recreate)
-    # df = pd.read_csv("app/data/testSample.csv")
-    # df.head()   
