@@ -6,8 +6,12 @@ Backend for Movie Search Engine
     ```
     pip install -r requirements.txt
     ```
+2. Buat env file untuk:
+ELASTICSEARCH_URL = 
+ELASTICSEARCH_API_KEY = 
+INDEX_NAME = 
 
-2. Jalankan apps ini dengan command
+3. Jalankan apps ini dengan command
     ```
     uvicorn main:app --reload
     ```
