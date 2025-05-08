@@ -16,7 +16,7 @@ Backend for Movie Search Engine
 
 3. Jalankan apps ini dengan command
     ```
-    uvicorn main:app --reload
+    uvicorn app.main:app --reload
     ```
 
 3. Voilah apps sudah berjalan
