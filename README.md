@@ -1,6 +1,6 @@
 
 
-# Movie Search API (Backend)
+# Movie Search (MOVSEARCH) API (Backend)
 
 Repositori ini berisi _backend_ untuk **Movie Search Engine** yang memanfaatkan **Elasticsearch** dan model *sentence-transformers* guna menyediakan pencarian semantik maupun pencarian berbasis kata kunci.
 
@@ -37,7 +37,7 @@ Repositori ini dibuat sebagai bagian dari proyek akhir mata kuliah Temu Balik In
 ## Prasyarat
 
 1. **Python** terinstal (direkomendasikan menggunakan *virtual environment*).
-2. **Elasticsearch v8** sudah berjalan & memiliki API-Key (mode *elastic-cloud* maupun self-hosted dengan `xpack.security` aktif).
+2. **Elasticsearch v8** sudah berjalan & memiliki API-Key dan ES-URL (mode *elastic-cloud* maupun self-hosted dengan `xpack.security` aktif).
 3. File CSV yang akan di-indeks (contoh: `app/data/testSample.csv`).
 
 ---
@@ -46,12 +46,12 @@ Repositori ini dibuat sebagai bagian dari proyek akhir mata kuliah Temu Balik In
 
 ```bash
 # 1. Klon repositori
-git clone https://github.com/username/movsearch-be.git && cd movsearch-be
+git clone https://github.com/penyuram-tbi/movsearch-be.git && cd movsearch-be
 
 # 2. Buat virtual env
 python -m venv venv
 
-source venv/bin/activate (pada OS) 
+source venv/bin/activate (pada MAC-OS/Linux) 
 
 OR 
 
@@ -73,7 +73,7 @@ PROJECT_NAME=Movie Search API
 # Elasticsearch configuration
 ELASTICSEARCH_URL=https://<cluster-id>.es.<region>.aws.cloud.es.io:443
 ELASTICSEARCH_API_KEY=<base64-api-key>
-INDEX_NAME=semantic_documents  # opsional, default sama
+INDEX_NAME=<your_index_name>
 
 # Vector model configuration
 VECTOR_MODEL_NAME=all-MiniLM-L6-v2
@@ -99,6 +99,7 @@ uvicorn app.main:app --reload    # Akses http://127.0.0.1:8000
 | Metode | Endpoint                | Deskripsi                                                               |
 | ------ | ----------------------- | ----------------------------------------------------------------------- |
 | `POST` | `/api/v1/movies/search` | Pencarian **semantik**; badan permintaan mengikuti model `QueryRequest` |
+| `POST` | `/api/v1/movies/search` | Pencarian **hybrid**; badan permintaan mengikuti model `QueryRequest` |
 | `GET`  | `/api/v1/movies/search` | Pencarian **kata kunci** + filter query-param                           |
 | `GET`  | `/api/v1/movies/{id}`   | Ambil detail film berdasarkan ID                                        |
 
