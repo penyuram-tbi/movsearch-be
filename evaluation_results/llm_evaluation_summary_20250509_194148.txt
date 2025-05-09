@@ -1,0 +1,46 @@
+================================================================================
+MOVIE SEARCH LLM EVALUATION SUMMARY
+================================================================================
+Date: 2025-05-09 19:41:48
+Number of test queries: 50
+--------------------------------------------------------------------------------
+
+SEARCH METHOD COMPARISON (LLM Binary Relevance):
+----------------------------------------
+Method          | Average Precision@10   | Average NDCG          
+------------------------------------------------------------------------------------------
+Semantic        | 0.7560                 | 0.8568                
+Keyword         | 0.8040                 | 0.8829                
+Hybrid          | 0.7960                 | 0.8834                
+
+BEST/WORST QUERIES BY METHOD:
+----------------------------------------
+
+Semantic:
+  Best query: "The Shawshank Redemption"
+  Worst query: "2000s superhero films"
+
+Keyword:
+  Best query: "The Shawshank Redemption"
+  Worst query: "Shawshank"
+
+Hybrid:
+  Best query: "The Shawshank Redemption"
+  Worst query: "Shawshank"
+
+
+WEIGHT OPTIMIZATION RESULTS:
+----------------------------------------
+Best weights for Precision@10:
+  BM25: 0.60
+  Vector: 0.40
+  Resulting precision: 0.8000
+
+Best weights for NDCG:
+  BM25: 1.00
+  Vector: 0.00
+  Resulting NDCG: 0.8803
+
+================================================================================
+END OF EVALUATION SUMMARY
+================================================================================

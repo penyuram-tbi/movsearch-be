@@ -1,0 +1,667 @@
+{
+  "semantic": [
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4307919,
+        1.4296169,
+        1.4149773,
+        1.4120605,
+        1.4050331
+      ],
+      "query": "The Shawshank Redemption",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.3747107,
+        1.3666945,
+        1.3666053,
+        1.3606585,
+        1.3596609
+      ],
+      "query": "Inception",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5107138,
+        1.5088022,
+        1.4858236,
+        1.4600501,
+        1.4397283
+      ],
+      "query": "The Godfather",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5273457,
+        1.5254632,
+        1.5011964,
+        1.5005012,
+        1.4871111
+      ],
+      "query": "Interstellar",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4598227,
+        1.4012772,
+        1.3837161,
+        1.3805671,
+        1.3793426
+      ],
+      "query": "Jurassic Park",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4403464,
+        1.424841,
+        1.4130595,
+        1.412786,
+        1.4099374
+      ],
+      "query": "Shawshank",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.456277,
+        1.362927,
+        1.3628079,
+        1.3506681,
+        1.3467191
+      ],
+      "query": "Lord of Rings",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4366447,
+        1.4244692,
+        1.4118245,
+        1.4068434,
+        1.40142
+      ],
+      "query": "Star war",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.3875277,
+        1.3123643,
+        1.3104522,
+        1.2961733,
+        1.290877
+      ],
+      "query": "Mission Imposible",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.6182885020492784,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.3348595,
+        1.301602,
+        1.2685753,
+        1.2679094,
+        1.2668418
+      ],
+      "query": "Harry Poter",
+      "query_intent": "title"
+    }
+  ],
+  "keyword": [
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        8.886864,
+        5.3453264,
+        5.201606,
+        4.8572435,
+        4.802595
+      ],
+      "query": "The Shawshank Redemption",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        11.525447,
+        9.118937,
+        7.2970943,
+        7.0664167,
+        7.034295
+      ],
+      "query": "Inception",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        5.3453264,
+        5.3389635,
+        5.201606,
+        4.8572435,
+        4.802595
+      ],
+      "query": "The Godfather",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 3,
+      "total_results": 3,
+      "relevance_scores": [
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        12.425886,
+        9.807208,
+        8.013492
+      ],
+      "query": "Interstellar",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        12.9925375,
+        12.515468,
+        11.804283,
+        11.397948,
+        10.4826145
+      ],
+      "query": "Jurassic Park",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 0,
+      "query": "Shawshank",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.777914,
+        15.864072,
+        15.197266,
+        14.211112,
+        11.676179
+      ],
+      "query": "Lord of Rings",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        22.050972,
+        16.84071,
+        13.557682,
+        13.047668,
+        12.444446
+      ],
+      "query": "Star war",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        14.063782,
+        13.432948,
+        10.855189,
+        9.874878,
+        8.847142
+      ],
+      "query": "Mission Imposible",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.993902,
+        14.845215,
+        12.454591,
+        11.876171,
+        10.438133
+      ],
+      "query": "Harry Poter",
+      "query_intent": "title"
+    }
+  ],
+  "hybrid": [
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8537443196213533,
+        0.61459636518402,
+        0.6036160028847225,
+        0.5940199456959078,
+        0.5911435349163008
+      ],
+      "query": "The Shawshank Redemption",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.7802451209753899,
+        0.7051782869081104,
+        0.6256978099462042,
+        0.6195679671972617,
+        0.6157163867030433
+      ],
+      "query": "Inception",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8113758256321019,
+        0.7972625086312151,
+        0.7887276608261571,
+        0.7696342657595234,
+        0.7679598326728041
+      ],
+      "query": "The Godfather",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 3,
+      "total_results": 3,
+      "relevance_scores": [
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8818364057064,
+        0.7318673903275329,
+        0.6925939677293432
+      ],
+      "query": "Interstellar",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8015696068555123,
+        0.7855533046840202,
+        0.7677833214276965,
+        0.727285198755067,
+        0.7105866720590981
+      ],
+      "query": "Jurassic Park",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 0,
+      "query": "Shawshank",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8325565208129071,
+        0.7870215087072665,
+        0.7562939926075869,
+        0.7313896702754936,
+        0.6725045730036815
+      ],
+      "query": "Lord of Rings",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8591611557382612,
+        0.7202989850707677,
+        0.6421622386495855,
+        0.6269220668596279,
+        0.5945343659963105
+      ],
+      "query": "Star war",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8280910695035157,
+        0.7742796977416515,
+        0.6678668705123676,
+        0.6324109676446126,
+        0.5883742499320871
+      ],
+      "query": "Mission Imposible",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8038904263748359,
+        0.7704955113424423,
+        0.635781249658419,
+        0.6269378902408798,
+        0.601880790148722
+      ],
+      "query": "Harry Poter",
+      "query_intent": "title"
+    }
+  ],
+  "queries": [
+    "The Shawshank Redemption",
+    "Inception",
+    "The Godfather",
+    "Interstellar",
+    "Jurassic Park",
+    "Shawshank",
+    "Lord of Rings",
+    "Star war",
+    "Mission Imposible",
+    "Harry Poter"
+  ],
+  "summary": {
+    "semantic": {
+      "avg_precision": 0.9199999999999999,
+      "avg_ndcg": 0.9283645299772058,
+      "num_queries": 10,
+      "best_query": "The Shawshank Redemption",
+      "worst_query": "Harry Poter"
+    },
+    "keyword": {
+      "avg_precision": 0.86,
+      "avg_ndcg": 0.8665356797722777,
+      "num_queries": 10,
+      "best_query": "The Shawshank Redemption",
+      "worst_query": "Shawshank"
+    },
+    "hybrid": {
+      "avg_precision": 0.86,
+      "avg_ndcg": 0.8665356797722777,
+      "num_queries": 10,
+      "best_query": "The Shawshank Redemption",
+      "worst_query": "Shawshank"
+    }
+  }
+}

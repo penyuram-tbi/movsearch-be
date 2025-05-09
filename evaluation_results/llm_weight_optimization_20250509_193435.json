@@ -1,0 +1,72 @@
+{
+  "best_weights_precision": {
+    "bm25": 0.6,
+    "vector": 0.4
+  },
+  "best_precision": 0.8,
+  "best_weights_ndcg": {
+    "bm25": 1.0,
+    "vector": 0.0
+  },
+  "best_ndcg": 0.8802554554863052,
+  "all_results": {
+    "bm25_0.00_vector_1.00": {
+      "avg_precision": 0.7250000000000001,
+      "avg_ndcg": 0.8231646458756968,
+      "weights": {
+        "bm25": 0.0,
+        "vector": 1.0
+      }
+    },
+    "bm25_0.20_vector_0.80": {
+      "avg_precision": 0.675,
+      "avg_ndcg": 0.794637385436094,
+      "weights": {
+        "bm25": 0.2,
+        "vector": 0.8
+      }
+    },
+    "bm25_0.40_vector_0.60": {
+      "avg_precision": 0.775,
+      "avg_ndcg": 0.8547408068985765,
+      "weights": {
+        "bm25": 0.4,
+        "vector": 0.6
+      }
+    },
+    "bm25_0.60_vector_0.40": {
+      "avg_precision": 0.8,
+      "avg_ndcg": 0.8760048997736344,
+      "weights": {
+        "bm25": 0.6,
+        "vector": 0.4
+      }
+    },
+    "bm25_0.80_vector_0.20": {
+      "avg_precision": 0.8,
+      "avg_ndcg": 0.8760048997736344,
+      "weights": {
+        "bm25": 0.8,
+        "vector": 0.19999999999999996
+      }
+    },
+    "bm25_1.00_vector_0.00": {
+      "avg_precision": 0.8,
+      "avg_ndcg": 0.8802554554863052,
+      "weights": {
+        "bm25": 1.0,
+        "vector": 0.0
+      }
+    }
+  },
+  "queries": [
+    "The Shawshank Redemption",
+    "Christopher Nolan movies",
+    "movies with Tom Hanks",
+    "best science fiction movies",
+    "movies about artificial intelligence",
+    "action movies with explosions and car chases",
+    "movies set in New York",
+    "highest rated action movies"
+  ]
+}

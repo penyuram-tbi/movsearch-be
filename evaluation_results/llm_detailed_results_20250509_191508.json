@@ -1,0 +1,3347 @@
+{
+  "semantic": [
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4307919,
+        1.4296169,
+        1.4149773,
+        1.4120605,
+        1.4050331
+      ],
+      "query": "The Shawshank Redemption",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.3747107,
+        1.3666945,
+        1.3666053,
+        1.3606585,
+        1.3596609
+      ],
+      "query": "Inception",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5107138,
+        1.5088022,
+        1.4858236,
+        1.4600501,
+        1.4397283
+      ],
+      "query": "The Godfather",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5273457,
+        1.5254632,
+        1.5011964,
+        1.5005012,
+        1.4871111
+      ],
+      "query": "Interstellar",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4598227,
+        1.4012772,
+        1.3837161,
+        1.3805671,
+        1.3793426
+      ],
+      "query": "Jurassic Park",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4403464,
+        1.424841,
+        1.4130595,
+        1.412786,
+        1.4099374
+      ],
+      "query": "Shawshank",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.456277,
+        1.362927,
+        1.3628079,
+        1.3506681,
+        1.3467191
+      ],
+      "query": "Lord of Rings",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4366447,
+        1.4244692,
+        1.4118245,
+        1.4068434,
+        1.40142
+      ],
+      "query": "Star war",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.3875277,
+        1.3123643,
+        1.3104522,
+        1.2961733,
+        1.290877
+      ],
+      "query": "Mission Imposible",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.6182885020492784,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.3348595,
+        1.301602,
+        1.2685753,
+        1.2679094,
+        1.2668418
+      ],
+      "query": "Harry Poter",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.7328286204777911,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        1.5056095,
+        1.4320413,
+        1.4314591,
+        1.4255139,
+        1.4254248
+      ],
+      "query": "Christopher Nolan movies",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4972825,
+        1.4719987,
+        1.4700059,
+        1.4643055,
+        1.4576259
+      ],
+      "query": "films directed by Quentin Tarantino",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4930915,
+        1.4746599,
+        1.4746156,
+        1.4744251,
+        1.4627737
+      ],
+      "query": "Steven Spielberg war movies",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.6797310500037655,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5338794,
+        1.497008,
+        1.4799238,
+        1.4791393,
+        1.4760324
+      ],
+      "query": "Martin Scorsese gangster films",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4687334,
+        1.4234595,
+        1.415347,
+        1.4136022,
+        1.4125096
+      ],
+      "query": "David Fincher psychological thrillers",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.8529278650606567,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4956536,
+        1.4251066,
+        1.4215864,
+        1.4211259,
+        1.414944
+      ],
+      "query": "movies with Tom Hanks",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4405124,
+        1.4398619,
+        1.4182379,
+        1.3957415,
+        1.3782294
+      ],
+      "query": "Leonardo DiCaprio best films",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4516103,
+        1.4442335,
+        1.4433986,
+        1.438828,
+        1.4320012
+      ],
+      "query": "Meryl Streep drama",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.4,
+      "ndcg": 0.6240505200038379,
+      "relevant_count": 2,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "search_scores": [
+        1.4814038,
+        1.4795191,
+        1.4666423,
+        1.4578007,
+        1.4571981
+      ],
+      "query": "action movies with Keanu Reeves",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.6182885020492784,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4242332,
+        1.4074398,
+        1.399405,
+        1.3952405,
+        1.3926972
+      ],
+      "query": "Samuel L Jackson films",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.9060254355346823,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        1.4466872,
+        1.4407114,
+        1.4360677,
+        1.4315937,
+        1.4289104
+      ],
+      "query": "best science fiction movies",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5698836,
+        1.5549685,
+        1.5385196,
+        1.5286833,
+        1.5254786
+      ],
+      "query": "horror films about haunted houses",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.4,
+      "ndcg": 0.9197207891481876,
+      "relevant_count": 2,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "search_scores": [
+        1.4695759,
+        1.4538114,
+        1.452452,
+        1.43505,
+        1.4348279
+      ],
+      "query": "romantic comedies with wedding",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4416456,
+        1.4359729,
+        1.4204462,
+        1.4114265,
+        1.3999641
+      ],
+      "query": "animated movies for children",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5314845,
+        1.5179104,
+        1.51675,
+        1.494471,
+        1.4911516
+      ],
+      "query": "crime thrillers with plot twists",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 1.0,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        1.4213381,
+        1.4153217,
+        1.4051409,
+        1.4031211,
+        1.4028286
+      ],
+      "query": "movies about artificial intelligence",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5292842,
+        1.4714152,
+        1.4549862,
+        1.4511144,
+        1.4500544
+      ],
+      "query": "films about time travel",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4541965,
+        1.4367977,
+        1.4326185,
+        1.4316896,
+        1.4298697
+      ],
+      "query": "movies with twist ending",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4536028,
+        1.4465947,
+        1.4451759,
+        1.4425206,
+        1.4425155
+      ],
+      "query": "films about mental illness",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.9469024295259745,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "search_scores": [
+        1.5176686,
+        1.4964999,
+        1.3656471,
+        1.3541613,
+        1.3533189
+      ],
+      "query": "heist movies",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.8529278650606567,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4242566,
+        1.4081995,
+        1.406564,
+        1.4001299,
+        1.3991797
+      ],
+      "query": "best movies from the 90s",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.8854598815714874,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        1.4429471,
+        1.3776227,
+        1.3653791,
+        1.3600558,
+        1.3588535
+      ],
+      "query": "classic 80s comedies",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "search_scores": [
+        1.4279873,
+        1.4201658,
+        1.4074954,
+        1.4011776,
+        1.396707
+      ],
+      "query": "2000s superhero films",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "search_scores": [
+        1.4666852,
+        1.4599855,
+        1.4478638,
+        1.4454471,
+        1.445034
+      ],
+      "query": "1970s crime movies",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.4,
+      "ndcg": 0.8503449055347546,
+      "relevant_count": 2,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "search_scores": [
+        1.4851146,
+        1.4672141,
+        1.4622152,
+        1.4434199,
+        1.4302261
+      ],
+      "query": "movies from 2022",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "search_scores": [
+        1.4735503,
+        1.4594343,
+        1.452725,
+        1.4515505,
+        1.4481268
+      ],
+      "query": "action movies with explosions and car chases",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 1.0,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        1.5397844,
+        1.5038335,
+        1.478429,
+        1.4757565,
+        1.4735149
+      ],
+      "query": "drama films with strong female leads",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4003668,
+        1.3909155,
+        1.3704616,
+        1.3699291,
+        1.3621478
+      ],
+      "query": "funny comedies with college students",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5025532,
+        1.4904052,
+        1.4818354,
+        1.476895,
+        1.4744751
+      ],
+      "query": "suspenseful movies with unexpected endings",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9828920819566879,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        1.5203991,
+        1.4961323,
+        1.4799871,
+        1.4510622,
+        1.4396851
+      ],
+      "query": "historical films about ancient rome",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 1.0,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "search_scores": [
+        1.4885283,
+        1.4756365,
+        1.4677913,
+        1.4631964,
+        1.457374
+      ],
+      "query": "movies set in New York",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.4767818,
+        1.4689103,
+        1.4657092,
+        1.4551294,
+        1.4366919
+      ],
+      "query": "films in Paris",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5370619,
+        1.5026686,
+        1.493715,
+        1.4445876,
+        1.4134449
+      ],
+      "query": "movies filmed in Japan",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.9060254355346823,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        1.5858953,
+        1.5845661,
+        1.5443776,
+        1.532196,
+        1.5298169
+      ],
+      "query": "italian movies",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5586492,
+        1.5492074,
+        1.4847375,
+        1.4844526,
+        1.4800227
+      ],
+      "query": "indonesian horror films",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 0.4,
+      "ndcg": 0.5437713091520254,
+      "relevant_count": 2,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        1.5194948,
+        1.4816879,
+        1.4625748,
+        1.4494015,
+        1.4435933
+      ],
+      "query": "highest rated action movies",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9558295932317544,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.5284913,
+        1.5129712,
+        1.5032535,
+        1.501257,
+        1.4865628
+      ],
+      "query": "best romantic films of all time",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9828920819566879,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        1.50001,
+        1.4915938,
+        1.4564325,
+        1.4556735,
+        1.4531357
+      ],
+      "query": "top sci-fi movies with great special effects",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        1.457025,
+        1.4263113,
+        1.4146926,
+        1.4146354,
+        1.4112643
+      ],
+      "query": "critically acclaimed documentaries",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9828920819566879,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        1.4414456,
+        1.4039304,
+        1.4029223,
+        1.4025972,
+        1.400969
+      ],
+      "query": "underrated comedy movies",
+      "query_intent": "rating"
+    }
+  ],
+  "keyword": [
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        8.886864,
+        5.3453264,
+        5.201606,
+        4.8572435,
+        4.802595
+      ],
+      "query": "The Shawshank Redemption",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        11.525447,
+        9.118937,
+        7.2970943,
+        7.0664167,
+        7.034295
+      ],
+      "query": "Inception",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        5.3453264,
+        5.3389635,
+        5.201606,
+        4.8572435,
+        4.802595
+      ],
+      "query": "The Godfather",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 3,
+      "total_results": 3,
+      "relevance_scores": [
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        12.425886,
+        9.807208,
+        8.013492
+      ],
+      "query": "Interstellar",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        12.9925375,
+        12.515468,
+        11.804283,
+        11.397948,
+        10.4826145
+      ],
+      "query": "Jurassic Park",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 0,
+      "query": "Shawshank",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.777914,
+        15.864072,
+        15.197266,
+        14.211112,
+        11.676179
+      ],
+      "query": "Lord of Rings",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        22.050972,
+        16.84071,
+        13.557682,
+        13.047668,
+        12.444446
+      ],
+      "query": "Star war",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        14.063782,
+        13.432948,
+        10.855189,
+        9.874878,
+        8.847142
+      ],
+      "query": "Mission Imposible",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.993902,
+        14.845215,
+        12.454591,
+        11.876171,
+        10.438133
+      ],
+      "query": "Harry Poter",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9828920819566879,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        15.286612,
+        15.286612,
+        13.272004,
+        11.464958,
+        11.4081745
+      ],
+      "query": "Christopher Nolan movies",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.472052,
+        11.158209,
+        10.974622,
+        10.779158,
+        10.093299
+      ],
+      "query": "films directed by Quentin Tarantino",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.84071,
+        16.280203,
+        15.286612,
+        13.557682,
+        13.272004
+      ],
+      "query": "Steven Spielberg war movies",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        21.223537,
+        15.158519,
+        12.995273,
+        12.616626,
+        12.616626
+      ],
+      "query": "Martin Scorsese gangster films",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        13.600695,
+        13.600695,
+        13.482505,
+        12.863895,
+        12.227102
+      ],
+      "query": "David Fincher psychological thrillers",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.67499,
+        15.568239,
+        15.286612,
+        13.748919,
+        13.423884
+      ],
+      "query": "movies with Tom Hanks",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        18.360329,
+        16.429949,
+        13.600695,
+        12.648307,
+        11.4081745
+      ],
+      "query": "Leonardo DiCaprio best films",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9558295932317544,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        14.141478,
+        11.785326,
+        11.333912,
+        10.945324,
+        10.533276
+      ],
+      "query": "Meryl Streep drama",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.4,
+      "ndcg": 0.9197207891481876,
+      "relevant_count": 2,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "search_scores": [
+        15.286612,
+        13.8220215,
+        13.272004,
+        11.464958,
+        11.4081745
+      ],
+      "query": "action movies with Keanu Reeves",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        13.047668,
+        12.521301,
+        11.134251,
+        10.974622,
+        10.919007
+      ],
+      "query": "Samuel L Jackson films",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.2,
+      "ndcg": 0.38685280723454163,
+      "relevant_count": 1,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "search_scores": [
+        18.81871,
+        18.360329,
+        16.941221,
+        16.107517,
+        15.286612
+      ],
+      "query": "best science fiction movies",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        24.006077,
+        17.349993,
+        15.179461,
+        14.265575,
+        13.907868
+      ],
+      "query": "horror films about haunted houses",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9558295932317544,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        14.266173,
+        13.49241,
+        13.272004,
+        12.897043,
+        12.747368
+      ],
+      "query": "romantic comedies with wedding",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        15.286612,
+        13.976821,
+        13.653009,
+        13.427192,
+        13.272004
+      ],
+      "query": "animated movies for children",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        15.158519,
+        14.413637,
+        14.36215,
+        13.602463,
+        12.669991
+      ],
+      "query": "crime thrillers with plot twists",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        17.347092,
+        15.286612,
+        13.272004,
+        13.272004,
+        12.811016
+      ],
+      "query": "movies about artificial intelligence",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        15.568239,
+        15.286612,
+        15.179461,
+        13.675272,
+        13.617348
+      ],
+      "query": "films about time travel",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        15.286612,
+        14.845215,
+        14.094047,
+        14.093083,
+        13.600695
+      ],
+      "query": "movies with twist ending",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        23.104664,
+        21.245613,
+        18.55276,
+        14.205423,
+        13.675272
+      ],
+      "query": "films about mental illness",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.9469024295259745,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "search_scores": [
+        15.286612,
+        13.272004,
+        11.464958,
+        11.4081745,
+        10.217816
+      ],
+      "query": "heist movies",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.7328286204777911,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        18.360329,
+        16.02772,
+        15.286612,
+        15.285861,
+        15.017951
+      ],
+      "query": "best movies from the 90s",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        14.352435,
+        11.326723,
+        9.536775,
+        8.718315,
+        8.107046
+      ],
+      "query": "classic 80s comedies",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "search_scores": [
+        19.764793,
+        12.669991,
+        11.329789,
+        11.134251,
+        10.974622
+      ],
+      "query": "2000s superhero films",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "search_scores": [
+        15.286612,
+        15.158519,
+        15.002106,
+        13.272004,
+        12.852406
+      ],
+      "query": "1970s crime movies",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.4,
+      "ndcg": 0.9197207891481876,
+      "relevant_count": 2,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "search_scores": [
+        15.286612,
+        13.695494,
+        13.272004,
+        12.747368,
+        12.266813
+      ],
+      "query": "movies from 2022",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        23.718954,
+        19.556866,
+        15.286612,
+        14.856647,
+        14.468078
+      ],
+      "query": "action movies with explosions and car chases",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9828920819566879,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        20.075365,
+        16.756323,
+        16.263634,
+        15.438457,
+        14.845215
+      ],
+      "query": "drama films with strong female leads",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.9469024295259745,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "search_scores": [
+        16.549095,
+        16.350542,
+        15.438589,
+        14.315156,
+        14.29977
+      ],
+      "query": "funny comedies with college students",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.620098,
+        15.286612,
+        14.845215,
+        14.07728,
+        13.600695
+      ],
+      "query": "suspenseful movies with unexpected endings",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        17.57086,
+        15.7899,
+        15.179461,
+        15.113468,
+        14.755152
+      ],
+      "query": "historical films about ancient rome",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9558295932317544,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        25.622032,
+        19.072056,
+        18.173464,
+        17.74682,
+        16.59265
+      ],
+      "query": "movies set in New York",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9828920819566879,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        19.295847,
+        13.272004,
+        11.676179,
+        11.134251,
+        10.974622
+      ],
+      "query": "films in Paris",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        16.838428,
+        15.286612,
+        14.018481,
+        13.693024,
+        13.272004
+      ],
+      "query": "movies filmed in Japan",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.7122630665145961,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        20.434902,
+        15.286612,
+        13.272004,
+        11.464958,
+        11.4081745
+      ],
+      "query": "italian movies",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        17.349993,
+        12.747368,
+        11.280773,
+        11.134251,
+        11.093819
+      ],
+      "query": "indonesian horror films",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9558295932317544,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        15.286612,
+        14.02577,
+        13.8220215,
+        13.419733,
+        13.272004
+      ],
+      "query": "highest rated action movies",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        20.375748,
+        18.360329,
+        17.417461,
+        16.429949,
+        15.286612
+      ],
+      "query": "best romantic films of all time",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        23.732204,
+        23.637794,
+        17.091682,
+        15.323949,
+        15.286612
+      ],
+      "query": "top sci-fi movies with great special effects",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 1.0,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        12.270367,
+        10.113858,
+        9.61412,
+        9.342699,
+        9.224283
+      ],
+      "query": "critically acclaimed documentaries",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        15.286612,
+        13.272004,
+        11.464958,
+        11.4081745,
+        11.292011
+      ],
+      "query": "underrated comedy movies",
+      "query_intent": "rating"
+    }
+  ],
+  "hybrid": [
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8537443196213533,
+        0.61459636518402,
+        0.6036160028847225,
+        0.5940199456959078,
+        0.5911435349163008
+      ],
+      "query": "The Shawshank Redemption",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.7802451209753899,
+        0.7051782869081104,
+        0.6256978099462042,
+        0.6195679671972617,
+        0.6157163867030433
+      ],
+      "query": "Inception",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8113758256321019,
+        0.7972625086312151,
+        0.7887276608261571,
+        0.7696342657595234,
+        0.7679598326728041
+      ],
+      "query": "The Godfather",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 3,
+      "total_results": 3,
+      "relevance_scores": [
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8818364057064,
+        0.7318673903275329,
+        0.6925939677293432
+      ],
+      "query": "Interstellar",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8015696068555123,
+        0.7855533046840202,
+        0.7677833214276965,
+        0.727285198755067,
+        0.7105866720590981
+      ],
+      "query": "Jurassic Park",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 0,
+      "query": "Shawshank",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8325565208129071,
+        0.7870215087072665,
+        0.7562939926075869,
+        0.7313896702754936,
+        0.6725045730036815
+      ],
+      "query": "Lord of Rings",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8591611557382612,
+        0.7202989850707677,
+        0.6421622386495855,
+        0.6269220668596279,
+        0.5945343659963105
+      ],
+      "query": "Star war",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8280910695035157,
+        0.7742796977416515,
+        0.6678668705123676,
+        0.6324109676446126,
+        0.5883742499320871
+      ],
+      "query": "Mission Imposible",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8038904263748359,
+        0.7704955113424423,
+        0.635781249658419,
+        0.6269378902408798,
+        0.601880790148722
+      ],
+      "query": "Harry Poter",
+      "query_intent": "title"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 1.0,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        0.8382494285472393,
+        0.8382338582067181,
+        0.7382369897625737,
+        0.6868336670942053,
+        0.6799587000218466
+      ],
+      "query": "Christopher Nolan movies",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8564443879312638,
+        0.6854941379883406,
+        0.6683019124786734,
+        0.6569583975774771,
+        0.6482245134720905
+      ],
+      "query": "films directed by Quentin Tarantino",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8686062471987891,
+        0.7941409296557467,
+        0.7760204628477524,
+        0.7576883960543621,
+        0.7560386290680947
+      ],
+      "query": "Steven Spielberg war movies",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9828920819566879,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        0.7999721548406258,
+        0.68262855063386,
+        0.6288140062491695,
+        0.6210611079574787,
+        0.6149923627270275
+      ],
+      "query": "Martin Scorsese gangster films",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8531273935263812,
+        0.8214440338033917,
+        0.7897510849095848,
+        0.7740879820284106,
+        0.7677710480749529
+      ],
+      "query": "David Fincher psychological thrillers",
+      "query_intent": "director"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8552814542094105,
+        0.8407274680084702,
+        0.7680042257431083,
+        0.7429198277404374,
+        0.7202620669405833
+      ],
+      "query": "movies with Tom Hanks",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8160481841913402,
+        0.7516828483762887,
+        0.6950760991158116,
+        0.6412725481124226,
+        0.6314316959061916
+      ],
+      "query": "Leonardo DiCaprio best films",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9558295932317544,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8068527662595009,
+        0.7230907475713106,
+        0.7230705378897839,
+        0.7126447805634566,
+        0.702285290460763
+      ],
+      "query": "Meryl Streep drama",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.4,
+      "ndcg": 0.9197207891481876,
+      "relevant_count": 2,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "search_scores": [
+        0.8112631731039825,
+        0.7917300007057056,
+        0.7566864944341176,
+        0.7157697822917694,
+        0.7085964207360458
+      ],
+      "query": "action movies with Keanu Reeves",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8212528411760336,
+        0.8160670249312453,
+        0.7474717821325496,
+        0.7390296054723107,
+        0.7199755423306214
+      ],
+      "query": "Samuel L Jackson films",
+      "query_intent": "actor"
+    },
+    {
+      "precision@k": 0.2,
+      "ndcg": 0.38685280723454163,
+      "relevant_count": 1,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "search_scores": [
+        0.8153854789989445,
+        0.814610532450428,
+        0.7552918002480165,
+        0.751242855215703,
+        0.7123608863172798
+      ],
+      "query": "best science fiction movies",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8102397191004267,
+        0.711581145480175,
+        0.6418320154718399,
+        0.6282858638213983,
+        0.6056229337736683
+      ],
+      "query": "horror films about haunted houses",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8552062581615169,
+        0.8286092637017831,
+        0.8022900410592366,
+        0.7992729672874415,
+        0.7957799254211302
+      ],
+      "query": "romantic comedies with wedding",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8201019861199567,
+        0.7944810148244061,
+        0.7716048185272515,
+        0.7685771978105356,
+        0.7439474003388625
+      ],
+      "query": "animated movies for children",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8246113240969045,
+        0.8189985010327361,
+        0.805662922720249,
+        0.765858296314031,
+        0.7602751649357451
+      ],
+      "query": "crime thrillers with plot twists",
+      "query_intent": "genre"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8249874415341814,
+        0.7641707934611752,
+        0.7046429108502246,
+        0.698082725884297,
+        0.6828666391093838
+      ],
+      "query": "movies about artificial intelligence",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8398568483132893,
+        0.8289723478832317,
+        0.806423137946887,
+        0.7685437250900617,
+        0.7619961736170999
+      ],
+      "query": "films about time travel",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 1.0,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        0.8263457103913399,
+        0.82541238635101,
+        0.8020455191190712,
+        0.7981095981189333,
+        0.7925420074952005
+      ],
+      "query": "movies with twist ending",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.7885740999594109,
+        0.7503444469856132,
+        0.734842038242177,
+        0.6098334557050221,
+        0.6089792154044773
+      ],
+      "query": "films about mental illness",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 1.0,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "search_scores": [
+        0.8075739573483778,
+        0.7367724146692818,
+        0.6971577191282361,
+        0.691906818364594,
+        0.6801162722488658
+      ],
+      "query": "heist movies",
+      "query_intent": "theme"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.7122630665145961,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        0.8295568205488644,
+        0.7819134719371283,
+        0.7323810458822331,
+        0.7224325637543241,
+        0.7222560019056399
+      ],
+      "query": "best movies from the 90s",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8273191232465573,
+        0.6919527187442294,
+        0.6339904967616639,
+        0.6070118995000775,
+        0.5866500907369303
+      ],
+      "query": "classic 80s comedies",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "search_scores": [
+        0.8082836037072193,
+        0.6530404442385505,
+        0.6227995577225209,
+        0.6134761609648629,
+        0.589575505986905
+      ],
+      "query": "2000s superhero films",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.0,
+      "ndcg": 0.0,
+      "relevant_count": 0,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "search_scores": [
+        0.8280557463287455,
+        0.7978462121009758,
+        0.7921342292026124,
+        0.7493963090097318,
+        0.7333631991170636
+      ],
+      "query": "1970s crime movies",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 0.4,
+      "ndcg": 0.9197207891481876,
+      "relevant_count": 2,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "search_scores": [
+        0.8315838595244487,
+        0.7849075562426621,
+        0.7557689324358479,
+        0.7464009050103634,
+        0.7310205794095488
+      ],
+      "query": "movies from 2022",
+      "query_intent": "time_period"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8343672369790529,
+        0.7229583519136831,
+        0.6293748859439587,
+        0.6274311062211282,
+        0.6120314866295417
+      ],
+      "query": "action movies with explosions and car chases",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 1.0,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        0.8218513655892267,
+        0.7405625128550892,
+        0.7294916476579283,
+        0.7225358227444667,
+        0.7158190158812751
+      ],
+      "query": "drama films with strong female leads",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.9469024295259745,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "search_scores": [
+        0.8293849496943776,
+        0.7736738708985265,
+        0.7666144624677476,
+        0.7537732878963906,
+        0.7430514007979921
+      ],
+      "query": "funny comedies with college students",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.7122630665145961,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "search_scores": [
+        0.8253391457126105,
+        0.8026258241681754,
+        0.7850599281689626,
+        0.777653125686567,
+        0.7749107856746604
+      ],
+      "query": "suspenseful movies with unexpected endings",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8116629472734915,
+        0.7671239404662484,
+        0.7624639740814895,
+        0.761057238488803,
+        0.7538189070060592
+      ],
+      "query": "historical films about ancient rome",
+      "query_intent": "plot"
+    },
+    {
+      "precision@k": 0.6,
+      "ndcg": 0.9674679834891693,
+      "relevant_count": 3,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "search_scores": [
+        0.8497725111037381,
+        0.7140161454614661,
+        0.7071010803134524,
+        0.6471634375997062,
+        0.6342306411675072
+      ],
+      "query": "movies set in New York",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9558295932317544,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8044387225411851,
+        0.7131037478499387,
+        0.6302005437301618,
+        0.6117622625215016,
+        0.6084113822844596
+      ],
+      "query": "films in Paris",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8152911587808862,
+        0.7573320967246684,
+        0.7375044416507552,
+        0.7310196155667922,
+        0.7245286569797345
+      ],
+      "query": "movies filmed in Japan",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.7606395682357036,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8312481044835002,
+        0.675032662269152,
+        0.6667671828481665,
+        0.6135683233455699,
+        0.6018721141343478
+      ],
+      "query": "italian movies",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8588564784988222,
+        0.7093690128000945,
+        0.7069541716784675,
+        0.6962076171930162,
+        0.6899464272305103
+      ],
+      "query": "indonesian horror films",
+      "query_intent": "location"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 0.9047172294870751,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8049347431504453,
+        0.7897996972623987,
+        0.7684465364411077,
+        0.7678431529793577,
+        0.7469440128527345
+      ],
+      "query": "highest rated action movies",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8296845883991707,
+        0.7887833424772441,
+        0.7508250787409194,
+        0.720776277387783,
+        0.7097397334632347
+      ],
+      "query": "best romantic films of all time",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8463486311802457,
+        0.8012377369278902,
+        0.706139292993206,
+        0.6801260186832367,
+        0.6658613113284952
+      ],
+      "query": "top sci-fi movies with great special effects",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 0.8,
+      "ndcg": 1.0,
+      "relevant_count": 4,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "search_scores": [
+        0.8072280525605819,
+        0.758817388403663,
+        0.7426521529104535,
+        0.7033242909694726,
+        0.6969172535013137
+      ],
+      "query": "critically acclaimed documentaries",
+      "query_intent": "rating"
+    },
+    {
+      "precision@k": 1.0,
+      "ndcg": 1.0,
+      "relevant_count": 5,
+      "total_results": 5,
+      "relevance_scores": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_scores": [
+        0.8115893743041072,
+        0.7608858406768593,
+        0.7093985264247682,
+        0.6856204286067467,
+        0.6785575264874262
+      ],
+      "query": "underrated comedy movies",
+      "query_intent": "rating"
+    }
+  ],
+  "queries": [
+    "The Shawshank Redemption",
+    "Inception",
+    "The Godfather",
+    "Interstellar",
+    "Jurassic Park",
+    "Shawshank",
+    "Lord of Rings",
+    "Star war",
+    "Mission Imposible",
+    "Harry Poter",
+    "Christopher Nolan movies",
+    "films directed by Quentin Tarantino",
+    "Steven Spielberg war movies",
+    "Martin Scorsese gangster films",
+    "David Fincher psychological thrillers",
+    "movies with Tom Hanks",
+    "Leonardo DiCaprio best films",
+    "Meryl Streep drama",
+    "action movies with Keanu Reeves",
+    "Samuel L Jackson films",
+    "best science fiction movies",
+    "horror films about haunted houses",
+    "romantic comedies with wedding",
+    "animated movies for children",
+    "crime thrillers with plot twists",
+    "movies about artificial intelligence",
+    "films about time travel",
+    "movies with twist ending",
+    "films about mental illness",
+    "heist movies",
+    "best movies from the 90s",
+    "classic 80s comedies",
+    "2000s superhero films",
+    "1970s crime movies",
+    "movies from 2022",
+    "action movies with explosions and car chases",
+    "drama films with strong female leads",
+    "funny comedies with college students",
+    "suspenseful movies with unexpected endings",
+    "historical films about ancient rome",
+    "movies set in New York",
+    "films in Paris",
+    "movies filmed in Japan",
+    "italian movies",
+    "indonesian horror films",
+    "highest rated action movies",
+    "best romantic films of all time",
+    "top sci-fi movies with great special effects",
+    "critically acclaimed documentaries",
+    "underrated comedy movies"
+  ],
+  "summary": {
+    "semantic": {
+      "avg_precision": 0.7559999999999999,
+      "avg_ndcg": 0.8567573868595442,
+      "num_queries": 50,
+      "best_query": "The Shawshank Redemption",
+      "worst_query": "2000s superhero films"
+    },
+    "keyword": {
+      "avg_precision": 0.8039999999999999,
+      "avg_ndcg": 0.8828538080502963,
+      "num_queries": 50,
+      "best_query": "The Shawshank Redemption",
+      "worst_query": "Shawshank"
+    },
+    "hybrid": {
+      "avg_precision": 0.7959999999999999,
+      "avg_ndcg": 0.8833992856325003,
+      "num_queries": 50,
+      "best_query": "The Shawshank Redemption",
+      "worst_query": "Shawshank"
+    }
+  }
+}
