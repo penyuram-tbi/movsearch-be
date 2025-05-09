@@ -8,6 +8,20 @@ class QueryRequest(BaseModel):
     filters: Optional[Dict[str, Any]] = None
     weights: Optional[Dict[str, float]] = None
 
+    class Config:
+        schema_extra = {
+            "example": {
+                "query": "science fiction with aliens",
+                "size": 10,
+                "filters": {
+                    "year": {"min": 2010, "max": 2023},
+                    "vote_average": {"min": 7.0},
+                    "genres": ["Science Fiction", "Action"]
+                },
+                "weights": {"bm25": 0.7, "vector": 0.3}
+            }
+        }
+
 class Movie(BaseModel):
     id: str
     title: str

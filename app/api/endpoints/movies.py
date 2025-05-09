@@ -52,7 +52,7 @@ async def search_movies_keyword(
     year_min: Optional[int] = Query(None, description="Minimum release year"),
     year_max: Optional[int] = Query(None, description="Maximum release year"),
     rating_min: Optional[float] = Query(None, description="Minimum rating"),
-    genres: Optional[str] = Query(None, description="Genre filter")
+    genres: Optional[str] = Query(None, description="Genre filter (comma-separated for multiple genres)")
 ):
     """
     Search for movies using keyword matching in title, overview, and other fields.
@@ -72,7 +72,8 @@ async def search_movies_keyword(
             filters["vote_average"] = {"min": rating_min}
             
         if genres is not None:
-            filters["genres"] = genres
+            genres_list = [genre.strip() for genre in genres.split(',')]
+            filters["genres"] = genres_list
             
         results = keyword_search(
             query=query,

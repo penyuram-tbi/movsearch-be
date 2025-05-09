@@ -37,7 +37,21 @@ def semantic_search(
     if filters:
         filter_clauses = []
         for field, value in filters.items():
-            if isinstance(value, list):
+            if field == "genres" and isinstance(value, list):
+                # Special handling for genres list - create AND LOGIC
+                genre_terms = []
+                for genre in value:
+                    # Match genres that contain any of the requested genres
+                    genre_terms.append({"match_phrase": {"genres": genre}})
+                
+                if genre_terms:
+                    filter_clauses.append({
+                        "bool": {
+                            "must": genre_terms,
+                            # "minimum_should_match": 1
+                        }
+                    })
+            elif isinstance(value, list):
                 filter_clauses.append({"terms": {field: value}})
             elif isinstance(value, dict) and ("min" in value or "max" in value):
                 range_filter = {"range": {field: {}}}
@@ -114,7 +128,21 @@ def keyword_search(
     filter_clauses = []
     if filters:
         for field, value in filters.items():
-            if isinstance(value, list):
+            if field == "genres" and isinstance(value, list):
+                # Special handling for genres list - create AND LOGIC
+                genre_terms = []
+                for genre in value:
+                    # Match genres that contain any of the requested genres
+                    genre_terms.append({"match_phrase": {"genres": genre}})
+                
+                if genre_terms:
+                    filter_clauses.append({
+                        "bool": {
+                            "must": genre_terms,
+                            # "minimum_should_match": 1
+                        }
+                    })
+            elif isinstance(value, list):
                 filter_clauses.append({"terms": {field: value}})
             elif isinstance(value, dict) and ("min" in value or "max" in value):
                 range_filter = {"range": {field: {}}}
@@ -202,7 +230,21 @@ def hybrid_search(
     if filters:
         filter_clauses = []
         for field, value in filters.items():
-            if isinstance(value, list):
+            if field == "genres" and isinstance(value, list):
+                # Special handling for genres list - create AND LOGIC
+                genre_terms = []
+                for genre in value:
+                    # Match genres that contain any of the requested genres
+                    genre_terms.append({"match_phrase": {"genres": genre}})
+                
+                if genre_terms:
+                    filter_clauses.append({
+                        "bool": {
+                            "must": genre_terms
+                            # "minimum_should_match": 1
+                        }
+                    })
+            elif isinstance(value, list):
                 filter_clauses.append({"terms": {field: value}})
             elif isinstance(value, dict) and ("min" in value or "max" in value):
                 range_filter = {"range": {field: {}}}
