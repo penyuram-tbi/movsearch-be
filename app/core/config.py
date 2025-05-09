@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     # Elasticsearch configuration
     ELASTICSEARCH_URL: str
     ELASTICSEARCH_API_KEY: str
-    INDEX_NAME: str = "semantic_documents"
+    INDEX_NAME: str
     
     # Vector model configuration
     VECTOR_MODEL_NAME: str = "all-MiniLM-L6-v2"

@@ -6,6 +6,7 @@ class QueryRequest(BaseModel):
     size: Optional[int] = 10
     min_score: Optional[float] = 0.0
     filters: Optional[Dict[str, Any]] = None
+    weights: Optional[Dict[str, float]] = None
 
 class Movie(BaseModel):
     id: str

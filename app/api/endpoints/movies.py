@@ -1,10 +1,33 @@
 from fastapi import APIRouter, HTTPException, Query, Depends
 from typing import List, Optional, Dict, Any
 from app.models.movie import Movie, QueryRequest, MovieList
-from app.services.search import semantic_search, keyword_search, get_movie_by_id
+from app.services.search import semantic_search, keyword_search, get_movie_by_id, hybrid_search
 
 router = APIRouter()
 
+@router.post("/hybrid-search", response_model=List[Movie])
+async def search_movies_hybrid(req: QueryRequest):
+    """
+    Search for movies using hybrid approach combining BM25 and vector similarity.
+    Provides better results by leveraging both keyword matching and semantic understanding.
+    """
+    try:
+        # Default weight is 50-50 but can be customized
+        weights = getattr(req, "weights", {}) or {}  # Handle None case
+        bm25_weight = weights.get("bm25", 0.5)
+        vector_weight = weights.get("vector", 0.5)
+        
+        results = hybrid_search(
+            query=req.query,
+            size=req.size if hasattr(req, "size") else 10,
+            bm25_multiplier=bm25_weight,
+            vector_multiplier=vector_weight,
+            filters=req.filters if hasattr(req, "filters") else None
+        )
+        return results
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Hybrid search failed: {str(e)}")
+    
 @router.post("/search", response_model=List[Movie])
 async def search_movies_semantic(req: QueryRequest):
     """
