@@ -17,6 +17,7 @@ Repositori ini dibuat sebagai bagian dari proyek akhir mata kuliah Temu Balik In
 | Fitur                 | Deskripsi                                                                                                     |
 |-----------------------|---------------------------------------------------------------------------------------------------------------|
 | **Pencarian Semantik**| Menghitung kemiripan kosinus antara embedding query & dokumen (dense vector)                                  |
+| **Pencarian Hybrid**| Menggabungkan pencarian kata-kunci dengan semantic dengan bobot yang bisa di adjust sendiri                                  |
 | **Pencarian Kata Kunci** | Mendukung *multi-match* dengan fuzziness & boosting (*title*^3, *overview*^2, dll.)                         |
 | **Filter Dinamis**    | Filter numerik (range) & kategorikal (term/terms) via parameter atau badan permintaan                          |
 | **Skalabilitas**      | Elasticsearch sebagai *data store* + FastAPI untuk API asinkron                                               |
