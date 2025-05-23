@@ -69,20 +69,22 @@ def create_movie_summary(movies: List[Dict[Any, Any]], query: str = "") -> str:
     system_prompt = (
         "You are a helpful movie recommendation assistant specialized in providing concise, informative, "
         "and engaging summaries of movies. Your summaries should highlight patterns, notable films, "
-        "and interesting insights across the provided movies."
+        "and interesting insights across the provided movies. Provide the summary directly without any introductory phrases. "
+        "Do not include any conversational filler or introductory sentences. Get straight to the point."
     )
     
     user_prompt = (
-        f"Here are some movies to summarize:\n\n{formatted_movies}\n\n"
-        f"Please provide a concise, informative summary of these movies (about 25 words). "
-        f"The summary should:\n"
-        f"1. Give an overview of what type of movies are shown if asked\n"
-        f"2. Highlight any notable directors, themes, or patterns, if asked\n"
-        f"3. Mention the top-rated film(s) in the results if asked\n"
-        f"4. Provide brief context on any common themes or genres\n"
-        f"DONT JUST FOCUS ON ONE MOVIE, but rather summarize the collection as a whole.\n\n"
+        f"Here are some movies to summarize:\\n\\n{formatted_movies}\\n\\n"
+        f"Please provide a concise, informative summary of these movies using Markdown formatting. "
+        f"The entire summary, including all requested details, should be structured and complete, fitting naturally without being truncated. "
+        f"The summary should:\\n"
+        f"1. Give an overview of what type of movies are shown.\\n"
+        f"2. Highlight any notable directors, themes, or patterns.\\n"
+        f"3. Mention the top-rated film(s) in the results.\\n"
+        f"4. Provide brief context on any common themes or genres.\\n"
+        f"Summarize the collection as a whole, but you can include brief details for individual movies as appropriate to cover the points above.\\n\\n"
         f"Make the response related to the movies provided and query."
-        f"Make the summary engaging and informative, like the summary boxes that appear in Google search results."
+        f"Make the summary engaging and informative, similar to summary boxes in search results, using Markdown for structure (e.g., headings, lists, bolding)."
     )
     
     # Add query context if provided
@@ -107,7 +109,7 @@ def create_movie_summary(movies: List[Dict[Any, Any]], query: str = "") -> str:
     with torch.no_grad():  # No need to track gradients for inference
         generated_ids = model.generate(
             **model_inputs,
-            max_new_tokens=120,  # Limit the summary length
+            max_new_tokens=250,  # Limit the summary length
             temperature=0.7,     # Add some creativity but keep it factual
             top_p=0.9,           # Use nucleus sampling for more natural text
             repetition_penalty=1.2  # Avoid repetition
