@@ -1,5 +1,5 @@
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from typing import List, Dict, Any
 
 # Lazy loading for model and tokenizer
@@ -13,6 +13,13 @@ def get_model_and_tokenizer():
     if _model is None or _tokenizer is None:
         model_name = "Qwen/Qwen2.5-0.5B-Instruct"
         
+        quantization_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.float16,
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4"
+        )
+    
         _model = AutoModelForCausalLM.from_pretrained(
             model_name,
             torch_dtype="auto",
@@ -20,6 +27,9 @@ def get_model_and_tokenizer():
         )
         
         _tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+        if _tokenizer.pad_token is None:
+            _tokenizer.pad_token = _tokenizer.eos_token
     
     return _model, _tokenizer
 
@@ -80,8 +90,8 @@ def create_movie_summary(movies: List[Dict[Any, Any]], query: str = "") -> str:
         f"2. Highlight any notable directors, themes, or patterns, if asked\n"
         f"3. Mention the top-rated film(s) in the results if asked\n"
         f"4. Provide brief context on any common themes or genres\n"
-        f"DONT JUST FOCUS ON ONE MOVIE, but rather summarize the collection as a whole.\n\n"
-        f"Make the response related to the movies provided and query."
+        f"DONT JUST FOCUS ON ONE MOVIE, but rather summarize the collection as a whole.\n"
+        f"Make the response related to the movies provided and query.\n"
         f"Make the summary engaging and informative, like the summary boxes that appear in Google search results."
     )
     
