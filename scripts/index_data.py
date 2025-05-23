@@ -20,9 +20,6 @@ def index_data(csv_path: str, recreate_index: bool = False):
     
     # Create index if it doesn't exist
     create_index()
-    # print(settings.ELASTICSEARCH_URL)
-    # print(settings.ELASTICSEARCH_API_KEY)
-    # print(settings.INDEX_NAME)
     # Load data from CSV
     try:
         df = pd.read_csv(csv_path)

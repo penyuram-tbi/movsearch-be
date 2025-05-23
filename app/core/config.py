@@ -1,9 +1,8 @@
 from pydantic_settings import BaseSettings
-from typing import Optional
 
 class Settings(BaseSettings):
-    API_V1_STR: str = "/api/v1"
-    PROJECT_NAME: str = "Movie Search API"
+    API_V1_STR: str
+    PROJECT_NAME: str
     
     # Elasticsearch configuration
     ELASTICSEARCH_URL: str
@@ -11,8 +10,8 @@ class Settings(BaseSettings):
     INDEX_NAME: str
     
     # Vector model configuration
-    VECTOR_MODEL_NAME: str = "all-MiniLM-L6-v2"
-    VECTOR_DIMENSIONS: int = 384
+    VECTOR_MODEL_NAME: str
+    VECTOR_DIMENSIONS: int
     
     class Config:
         env_file = ".env"

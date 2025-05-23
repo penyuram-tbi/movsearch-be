@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Query, Depends
-from typing import List, Optional, Dict, Any
-from app.models.movie import Movie, QueryRequest, MovieList
+from typing import List
+from app.models.movie import Movie, QueryRequest, KeywordSearchRequest
 from app.services.search import semantic_search, keyword_search, get_movie_by_id, hybrid_search
 
 router = APIRouter()
@@ -28,7 +28,7 @@ async def search_movies_hybrid(req: QueryRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Hybrid search failed: {str(e)}")
     
-@router.post("/search", response_model=List[Movie])
+@router.post("/semantic-search", response_model=List[Movie])
 async def search_movies_semantic(req: QueryRequest):
     """
     Search for movies using semantic similarity with the query.
@@ -45,15 +45,8 @@ async def search_movies_semantic(req: QueryRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
 
-@router.get("/search", response_model=List[Movie])
-async def search_movies_keyword(
-    query: str = Query(..., description="Search query text"),
-    size: int = Query(10, description="Number of results to return"),
-    year_min: Optional[int] = Query(None, description="Minimum release year"),
-    year_max: Optional[int] = Query(None, description="Maximum release year"),
-    rating_min: Optional[float] = Query(None, description="Minimum rating"),
-    genres: Optional[str] = Query(None, description="Genre filter (comma-separated for multiple genres)")
-):
+@router.post("/keyword-search", response_model=List[Movie])
+async def search_movies_keyword(req: KeywordSearchRequest):
     """
     Search for movies using keyword matching in title, overview, and other fields.
     Supports basic filtering options via query parameters.
@@ -61,23 +54,23 @@ async def search_movies_keyword(
     try:
         # Build filters dict from query parameters
         filters = {}
-        if year_min is not None or year_max is not None:
+        if req.year_min is not None or req.year_max is not None:
             filters["year"] = {}
-            if year_min is not None:
-                filters["year"]["min"] = year_min
-            if year_max is not None:
-                filters["year"]["max"] = year_max
+            if req.year_min is not None:
+                filters["year"]["min"] = req.year_min
+            if req.year_max is not None:
+                filters["year"]["max"] = req.year_max
                 
-        if rating_min is not None:
-            filters["vote_average"] = {"min": rating_min}
+        if req.rating_min is not None:
+            filters["vote_average"] = {"min": req.rating_min}
             
-        if genres is not None:
-            genres_list = [genre.strip() for genre in genres.split(',')]
+        if req.genres is not None:
+            genres_list = [genre.strip() for genre in req.genres.split(',')]
             filters["genres"] = genres_list
             
         results = keyword_search(
-            query=query,
-            size=size,
+            query=req.query,
+            size=req.size,
             filters=filters if filters else None
         )
         return results
