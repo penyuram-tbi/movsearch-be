@@ -123,7 +123,8 @@ def keyword_search(
             "fuzziness": "AUTO"
         }
     }]
-    
+    # print(settings.ELASTICSEARCH_URL)
+    # print(settings.ELASTICSEARCH_API_KEY)
     # Add filters if provided
     filter_clauses = []
     if filters:
