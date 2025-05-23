@@ -22,6 +22,26 @@ class QueryRequest(BaseModel):
             }
         }
 
+class KeywordSearchRequest(BaseModel):
+    query: str
+    size: int = 10
+    year_min: Optional[int] = None
+    year_max: Optional[int] = None
+    rating_min: Optional[float] = None
+    genres: Optional[str] = None
+    
+    class Config:
+        schema_extra = {
+            "example": {
+                "query": "action adventure",
+                "size": 10,
+                "year_min": 2000,
+                "year_max": 2022,
+                "rating_min": 7.5,
+                "genres": "Action, Adventure"
+            }
+        }
+        
 class Movie(BaseModel):
     id: str
     title: str
