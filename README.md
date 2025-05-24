@@ -99,9 +99,10 @@ uvicorn app.main:app --reload    # Akses http://127.0.0.1:8000
 
 | Metode | Endpoint                | Deskripsi                                                               |
 | ------ | ----------------------- | ----------------------------------------------------------------------- |
-| `POST` | `/api/v1/movies/search` | Pencarian **semantik**; badan permintaan mengikuti model `QueryRequest` |
-| `POST` | `/api/v1/movies/search` | Pencarian **hybrid**; badan permintaan mengikuti model `QueryRequest` |
-| `GET`  | `/api/v1/movies/search` | Pencarian **kata kunci** + filter query-param                           |
+| `POST` | `/api/v1/movies/semantic-search` | Pencarian **semantik**; badan permintaan mengikuti model `QueryRequest` |
+| `POST` | `/api/v1/movies/hybrid-search` | Pencarian **hybrid**; badan permintaan mengikuti model `QueryRequest` |
+| `POST` | `/api/v1/movies/keyword-search` | Pencarian **kata kunci** + filter query-param   
+| `POST` | `/api/v1/search/summarize` | Ringkasan hasil data film yang diretrieve oleh api-api search diatas                           |
 | `GET`  | `/api/v1/movies/{id}`   | Ambil detail film berdasarkan ID                                        |
 
 
