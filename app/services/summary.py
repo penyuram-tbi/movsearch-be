@@ -1,35 +1,68 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from typing import List, Dict, Any
+import os
+import gc
+import logging
+import torch
 
+logger = logging.getLogger(__name__)
+
+# Set cache paths
+os.environ['TRANSFORMERS_CACHE'] = '/app/model_cache'
+os.environ['HF_HOME'] = '/app/model_cache'
 # Lazy loading for model and tokenizer
 _model = None
 _tokenizer = None
 
 def get_model_and_tokenizer():
-    """Initialize and return the model and tokenizer with lazy loading"""
+    """GPU-optimized model loading with 4-bit quantization"""
     global _model, _tokenizer
     
     if _model is None or _tokenizer is None:
         model_name = "Qwen/Qwen2.5-0.5B-Instruct"
         
+        logger.info("Loading GPU-optimized 4-bit quantized model...")
+        
+        # GPU-optimized quantization config
         quantization_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
             bnb_4bit_quant_type="nf4"
         )
-    
-        _model = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            torch_dtype="auto",
-            device_map="auto"
-        )
         
-        _tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-        if _tokenizer.pad_token is None:
-            _tokenizer.pad_token = _tokenizer.eos_token
+        try:
+            # Load tokenizer
+            _tokenizer = AutoTokenizer.from_pretrained(
+                model_name,
+                cache_dir='/app/model_cache',
+                trust_remote_code=True
+            )
+            
+            # Load model with GPU optimization
+            _model = AutoModelForCausalLM.from_pretrained(
+                model_name,
+                quantization_config=quantization_config,
+                device_map="auto",  # Auto GPU mapping
+                torch_dtype=torch.float16,
+                cache_dir='/app/model_cache',
+                trust_remote_code=True
+            )
+            
+            if _tokenizer.pad_token is None:
+                _tokenizer.pad_token = _tokenizer.eos_token
+            
+            # Log GPU usage
+            if torch.cuda.is_available():
+                memory_used = torch.cuda.memory_allocated() / 1024**3
+                logger.info(f"✅ Model loaded on GPU, using {memory_used:.1f}GB VRAM")
+            else:
+                logger.info("✅ Model loaded on CPU")
+                
+        except Exception as e:
+            logger.error(f"❌ Error loading model: {e}")
+            raise e
     
     return _model, _tokenizer
 
@@ -132,6 +165,15 @@ def create_movie_summary(movies: List[Dict[Any, Any]], query: str = "") -> str:
     
     # Decode the response
     response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+    
+    # GPU memory cleanup
+    del model_inputs, generated_ids
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+        torch.cuda.synchronize()
+    gc.collect()
+
+    logger.debug("GPU memory cleaned")
     
     # Clean up any trailing/leading whitespace
     return response.strip()
