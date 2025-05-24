@@ -1,0 +1,417 @@
+Starting LLM-based evaluation with 50 queries
+Using QWEN model: True
+Evaluating query: The Shawshank Redemption (Intent: title)
+Semantic search results: ['The Crow: Salvation', 'Dhoom 2', 'The Salton Sea']
+Keyword search results: ['The Salton Sea', 'The Honeymooners', 'Mongol: The Rise of Genghis Khan']
+Hybrid search results: ['The Salton Sea', 'The Honeymooners', 'Mongol: The Rise of Genghis Khan']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Inception (Intent: title)
+Semantic search results: ['Sphere', 'The Guru', 'The Signal']
+Keyword search results: ['Batman Returns', 'The Foot Fist Way', 'Violet & Daisy']
+Hybrid search results: ['Batman Returns', 'The Foot Fist Way', 'Tremors']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: The Godfather (Intent: title)
+Semantic search results: ['The Sicilian', 'The Family', 'Trinity Is Still My Name']
+Keyword search results: ['The Honeymooners', "Ellie and Abbie (and Ellie's Dead Aunt)", 'Mongol: The Rise of Genghis Khan']
+Hybrid search results: ['The Honeymooners', "Ellie and Abbie (and Ellie's Dead Aunt)", 'Mongol: The Rise of Genghis Khan']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Interstellar (Intent: title)
+Semantic search results: ['Stargate', 'Sphere', 'When Worlds Collide']
+Keyword search results: ['Stargate', 'Starship Troopers', 'Breach']
+Hybrid search results: ['Stargate', 'Starship Troopers', 'Breach']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 3/3
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 3/3
+Evaluating query: Jurassic Park (Intent: title)
+Semantic search results: ['Theodore Rex', 'Raiders of the Lost Ark', 'The Monster That Challenged the World']
+Keyword search results: ['Pari', 'Barefoot in the Park', 'Colette']
+Hybrid search results: ['Barefoot in the Park', 'Pari', 'The Dark Crystal']
+Semantic - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Shawshank (Intent: title)
+Semantic search results: ['Piku', 'Pari', 'Irandam Ulagam']
+Keyword search results: []
+Hybrid search results: []
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 0.00, NDCG: 0.00, Relevant: 0/0
+Hybrid - P@5: 0.00, NDCG: 0.00, Relevant: 0/0
+Evaluating query: Lord of Rings (Intent: title)
+Semantic search results: ['Fate/Grand Order the Movie: Divine Realm of the Round Table: Camelot Wandering; Agateram', 'Adipurush', "The King's Daughter"]
+Keyword search results: ["A Writer's Odyssey", 'Sing Sing', 'Lord of the Flies']
+Hybrid search results: ["A Writer's Odyssey", 'Lord of the Flies', 'Sing Sing']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Star war (Intent: title)
+Semantic search results: ['Star Wars: The Force Awakens', 'Battle: Los Angeles', 'The Dog Who Stopped the War']
+Keyword search results: ['Star Wars: The Force Awakens', 'A War', 'Rumors of Wars']
+Hybrid search results: ['Star Wars: The Force Awakens', 'A War', 'I Declare War']
+Semantic - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Keyword - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Evaluating query: Mission Imposible (Intent: title)
+Semantic search results: ['The Contractor', 'Lone Survivor', 'Catch That Kid']
+Keyword search results: ['Lone Survivor', 'Millions', 'The Passion of the Christ']
+Hybrid search results: ['Lone Survivor', 'Millions', 'The Passion of the Christ']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Harry Poter (Intent: title)
+Semantic search results: ['Dirty Harry', 'Save the Tiger', 'Fantastic Beasts: The Crimes of Grindelwald']
+Keyword search results: ['Miss Potter', 'Dirty Harry', 'Marry Me']
+Hybrid search results: ['Miss Potter', 'Dirty Harry', 'Marry Me']
+Semantic - P@5: 0.60, NDCG: 0.62, Relevant: 3/5
+Keyword - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Evaluating query: Christopher Nolan movies (Intent: director)
+Semantic search results: ['Following', 'Sphere', 'The Imaginarium of Doctor Parnassus']
+Keyword search results: ['Christopher Roth', 'A Minecraft Movie', 'Saranair: The Movie']
+Hybrid search results: ['A Minecraft Movie', 'Christopher Roth', 'Saranair: The Movie']
+Semantic - P@5: 0.60, NDCG: 0.73, Relevant: 3/5
+Keyword - P@5: 0.80, NDCG: 0.98, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 1.00, Relevant: 4/5
+Evaluating query: films directed by Quentin Tarantino (Intent: director)
+Semantic search results: ['Dirty Harry', 'The Guard', 'Kill Bill: Vol. 1']
+Keyword search results: ['The End of Violence', 'Tell It Like a Woman', 'Night of the Living Dead']
+Hybrid search results: ['The End of Violence', 'Night of the Living Dead', 'Tell It Like a Woman']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Steven Spielberg war movies (Intent: director)
+Semantic search results: ['Best Defense', 'Star Wars: The Force Awakens', 'I Declare War']
+Keyword search results: ['A War', 'Kung Pow: Enter the Fist', 'A Minecraft Movie']
+Hybrid search results: ['A War', 'Kung Pow: Enter the Fist', 'A Minecraft Movie']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Martin Scorsese gangster films (Intent: director)
+Semantic search results: ['Menace II Society', 'Sugar Hill', 'Physical Evidence']
+Keyword search results: ['Martha Marcy May Marlene', 'The Marine', 'Settlers']
+Hybrid search results: ['Martha Marcy May Marlene', 'The Marine', 'Settlers']
+Semantic - P@5: 0.60, NDCG: 0.68, Relevant: 3/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 0.80, NDCG: 0.98, Relevant: 4/5
+Evaluating query: David Fincher psychological thrillers (Intent: director)
+Semantic search results: ['The Fury', 'Birdman of Alcatraz', 'Thunderbirds']
+Keyword search results: ['David and Lisa', 'King David', 'Lost in America']
+Hybrid search results: ['David and Lisa', 'King David', 'Lost in America']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Evaluating query: movies with Tom Hanks (Intent: actor)
+Semantic search results: ['Tom Horn', 'Nothing in Common', 'They Live']
+Keyword search results: ['State and Main', 'Tom Horn', 'A Minecraft Movie']
+Hybrid search results: ['State and Main', 'Tom Horn', 'A Minecraft Movie']
+Semantic - P@5: 0.60, NDCG: 0.85, Relevant: 3/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Leonardo DiCaprio best films (Intent: actor)
+Semantic search results: ['Hercules in New York', 'La Dolce Vita', 'Let the Sunshine In']
+Keyword search results: ['Best of the Best 2', 'Urban Legends: Final Cut', 'Best Defense']
+Hybrid search results: ['Best of the Best 2', 'Urban Legends: Final Cut', 'Best Defense']
+Semantic - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: Meryl Streep drama (Intent: actor)
+Semantic search results: ['Observe and Report', 'Below Her Mouth', 'Ms .45']
+Keyword search results: ['The First Day of the Rest of Your Life', 'The Big Fisherman', 'Street Knight']
+Hybrid search results: ['The First Day of the Rest of Your Life', "Marvin's Room", 'Street Knight']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 0.80, NDCG: 0.96, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.96, Relevant: 4/5
+Evaluating query: action movies with Keanu Reeves (Intent: actor)
+Semantic search results: ['The Package', 'State and Main', 'Street Knight']
+Keyword search results: ['A Minecraft Movie', 'Game 6', 'Saranair: The Movie']
+Hybrid search results: ['A Minecraft Movie', 'Game 6', 'Saranair: The Movie']
+Semantic - P@5: 0.40, NDCG: 0.62, Relevant: 2/5
+Keyword - P@5: 0.40, NDCG: 0.92, Relevant: 2/5
+Hybrid - P@5: 0.40, NDCG: 0.92, Relevant: 2/5
+Evaluating query: Samuel L Jackson films (Intent: actor)
+Semantic search results: ['King David', 'Superbeast', 'I Declare War']
+Keyword search results: ['L!fe Happens', 'Sphere', 'The End of Violence']
+Hybrid search results: ['Sphere', 'L!fe Happens', 'The End of Violence']
+Semantic - P@5: 0.60, NDCG: 0.62, Relevant: 3/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: best science fiction movies (Intent: genre)
+Semantic search results: ['The Alien Factor', 'Star Wars: The Force Awakens', 'Edison & Leo']
+Keyword search results: ['2046', 'Best of the Best 2', 'Game 6']
+Hybrid search results: ['2046', 'Best of the Best 2', 'Martian Child']
+Semantic - P@5: 0.60, NDCG: 0.91, Relevant: 3/5
+Keyword - P@5: 0.20, NDCG: 0.39, Relevant: 1/5
+Hybrid - P@5: 0.20, NDCG: 0.39, Relevant: 1/5
+Evaluating query: horror films about haunted houses (Intent: genre)
+Semantic search results: ['Beetlejuice', 'Halloween III: Season of the Witch', 'Demonic']
+Keyword search results: ['Leprechaun Returns', 'Urban Legends: Final Cut', 'Rumors of Wars']
+Hybrid search results: ['Leprechaun Returns', 'Urban Legends: Final Cut', 'Rumors of Wars']
+Semantic - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: romantic comedies with wedding (Intent: genre)
+Semantic search results: ['Win a Date with Tad Hamilton!', "Muriel's Wedding", 'Tanu Weds Manu']
+Keyword search results: ["A Midsummer Night's Dream", 'Miranda', "Muriel's Wedding"]
+Hybrid search results: ["A Midsummer Night's Dream", "Muriel's Wedding", "The Best Man's Wedding"]
+Semantic - P@5: 0.40, NDCG: 0.92, Relevant: 2/5
+Keyword - P@5: 0.80, NDCG: 0.96, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Evaluating query: animated movies for children (Intent: genre)
+Semantic search results: ['How to Eat Fried Worms', 'Pumpkinhead', 'The Shaggy Dog']
+Keyword search results: ['A Minecraft Movie', "Children's Island", 'Urban Legends: Final Cut']
+Hybrid search results: ['A Minecraft Movie', "Children's Island", 'The New Adventures of Pippi Longstocking']
+Semantic - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Keyword - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Evaluating query: crime thrillers with plot twists (Intent: genre)
+Semantic search results: ['The Usual Suspects', 'Physical Evidence', 'A Stranger Among Us']
+Keyword search results: ['Prime', 'He Who Dares', 'Tango & Cash']
+Hybrid search results: ['Prime', 'Tango & Cash', 'He Who Dares']
+Semantic - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: movies about artificial intelligence (Intent: theme)
+Semantic search results: ['Deep Blue Sea', 'Species', 'Company Man']
+Keyword search results: ['King David', 'A Minecraft Movie', 'Saranair: The Movie']
+Hybrid search results: ['King David', 'A Minecraft Movie', 'About Schmidt']
+Semantic - P@5: 0.80, NDCG: 1.00, Relevant: 4/5
+Keyword - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Evaluating query: films about time travel (Intent: theme)
+Semantic search results: ['The Door', 'The Final Countdown', 'Stargate']
+Keyword search results: ["Gulliver's Travels", 'Happy Times', 'Rumors of Wars']
+Hybrid search results: ["Gulliver's Travels", 'Happy Times', 'Rumors of Wars']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: movies with twist ending (Intent: theme)
+Semantic search results: ['Wrong Turn 4: Bloody Beginnings', 'Point of No Return', 'Violet & Daisy']
+Keyword search results: ['A Minecraft Movie', 'End Game', "Peter Pan's Neverland Nightmare"]
+Hybrid search results: ['End Game', 'A Minecraft Movie', 'It Ends with Us']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 0.80, NDCG: 1.00, Relevant: 4/5
+Evaluating query: films about mental illness (Intent: theme)
+Semantic search results: ['Dorothy Mills', 'Ode to Joy', 'Psycho III']
+Keyword search results: ['The Accidental Spy', 'All About Eve', 'Rumors of Wars']
+Hybrid search results: ['The Accidental Spy', 'All About Eve', 'Rumors of Wars']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: heist movies (Intent: theme)
+Semantic search results: ['The Instigators', 'Stealing Raden Saleh', 'Goldfinger']
+Keyword search results: ['A Minecraft Movie', 'Saranair: The Movie', 'Moby Dick']
+Hybrid search results: ['A Minecraft Movie', 'Saranair: The Movie', 'The Instigators']
+Semantic - P@5: 0.60, NDCG: 0.95, Relevant: 3/5
+Keyword - P@5: 0.60, NDCG: 0.95, Relevant: 3/5
+Hybrid - P@5: 0.60, NDCG: 1.00, Relevant: 3/5
+Evaluating query: best movies from the 90s (Intent: time_period)
+Semantic search results: ['Mad Max', 'Best Defense', 'Gone with the Wind']
+Keyword search results: ['Best of the Best 2', 'Lost in America', 'A Minecraft Movie']
+Hybrid search results: ['Best of the Best 2', 'Lost in America', 'About Last Night']
+Semantic - P@5: 0.60, NDCG: 0.85, Relevant: 3/5
+Keyword - P@5: 0.60, NDCG: 0.73, Relevant: 3/5
+Hybrid - P@5: 0.60, NDCG: 0.71, Relevant: 3/5
+Evaluating query: classic 80s comedies (Intent: time_period)
+Semantic search results: ['Screwballs', 'Best Defense', 'Lost in America']
+Keyword search results: ['Lassie Come Home', 'Boa vs. Python', 'Night of the Living Dead']
+Hybrid search results: ['Lassie Come Home', 'Boa vs. Python', 'Night of the Living Dead']
+Semantic - P@5: 0.60, NDCG: 0.89, Relevant: 3/5
+Keyword - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Evaluating query: 2000s superhero films (Intent: time_period)
+Semantic search results: ['Observe and Report', 'Austin Powers in Goldmember', 'Zero Dark Thirty']
+Keyword search results: ['7 Guardians of the Tomb', 'Death Race 2000', 'Sky High']
+Hybrid search results: ['7 Guardians of the Tomb', 'Death Race 2000', 'Sky High']
+Semantic - P@5: 0.00, NDCG: 0.00, Relevant: 0/5
+Keyword - P@5: 0.00, NDCG: 0.00, Relevant: 0/5
+Hybrid - P@5: 0.00, NDCG: 0.00, Relevant: 0/5
+Evaluating query: 1970s crime movies (Intent: time_period)
+Semantic search results: ['Take the Money and Run', 'Physical Evidence', 'The Naked Gun: From the Files of Police Squad!']
+Keyword search results: ['A Minecraft Movie', 'Prime', 'Kung Pow: Enter the Fist']
+Hybrid search results: ['Prime', 'Kung Pow: Enter the Fist', 'A Minecraft Movie']
+Semantic - P@5: 0.00, NDCG: 0.00, Relevant: 0/5
+Keyword - P@5: 0.00, NDCG: 0.00, Relevant: 0/5
+Hybrid - P@5: 0.00, NDCG: 0.00, Relevant: 0/5
+Evaluating query: movies from 2022 (Intent: time_period)
+Semantic search results: ['Stargate', 'Mad Max', 'Smile 2']
+Keyword search results: ['A Minecraft Movie', 'From Beyond', 'Saranair: The Movie']
+Hybrid search results: ['A Minecraft Movie', 'From Beyond', 'Saranair: The Movie']
+Semantic - P@5: 0.40, NDCG: 0.85, Relevant: 2/5
+Keyword - P@5: 0.40, NDCG: 0.92, Relevant: 2/5
+Hybrid - P@5: 0.40, NDCG: 0.92, Relevant: 2/5
+Evaluating query: action movies with explosions and car chases (Intent: plot)
+Semantic search results: ['Duel', 'Extreme Ops', 'Stage Fright']
+Keyword search results: ['He Who Dares', 'Mega Shark vs. Crocosaurus', 'A Minecraft Movie']
+Hybrid search results: ['He Who Dares', 'Mega Shark vs. Crocosaurus', 'Gone in Sixty Seconds']
+Semantic - P@5: 0.00, NDCG: 0.00, Relevant: 0/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: drama films with strong female leads (Intent: plot)
+Semantic search results: ['Win a Date with Tad Hamilton!', 'Mistress', 'Below Her Mouth']
+Keyword search results: ['Made in Dagenham', 'Night of the Living Dead', 'Theodore Rex']
+Hybrid search results: ['Made in Dagenham', 'Theodore Rex', 'Night of the Living Dead']
+Semantic - P@5: 0.80, NDCG: 1.00, Relevant: 4/5
+Keyword - P@5: 0.80, NDCG: 0.98, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 1.00, Relevant: 4/5
+Evaluating query: funny comedies with college students (Intent: plot)
+Semantic search results: ['Teen Wolf Too', 'Milf', 'Screwballs']
+Keyword search results: ['Dear White People', 'The Evil Dead', "God's Not Dead"]
+Hybrid search results: ['Dear White People', 'The Evil Dead', "God's Not Dead"]
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 0.60, NDCG: 0.95, Relevant: 3/5
+Hybrid - P@5: 0.60, NDCG: 0.95, Relevant: 3/5
+Evaluating query: suspenseful movies with unexpected endings (Intent: plot)
+Semantic search results: ['The Last Word', 'She Dies Tomorrow', 'Smile 2']
+Keyword search results: ['Young Jönsson Gang Showing Off', 'A Minecraft Movie', 'End Game']
+Hybrid search results: ['Young Jönsson Gang Showing Off', 'End Game', 'A Minecraft Movie']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Hybrid - P@5: 0.60, NDCG: 0.71, Relevant: 3/5
+Evaluating query: historical films about ancient rome (Intent: plot)
+Semantic search results: ['Gladiators of Rome', 'When in Rome', 'The Final Inquiry']
+Keyword search results: ['Lassie Come Home', '10 Items or Less', 'Rumors of Wars']
+Hybrid search results: ['Lassie Come Home', 'Gladiators of Rome', "The St. Valentine's Day Massacre"]
+Semantic - P@5: 0.80, NDCG: 0.98, Relevant: 4/5
+Keyword - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: movies set in New York (Intent: location)
+Semantic search results: ['Ms .45', "Brooklyn's Finest", 'Prime']
+Keyword search results: ['Hercules in New York', 'The Honeymooners', 'Laws of Attraction']
+Hybrid search results: ['Hercules in New York', 'The Honeymooners', 'Laws of Attraction']
+Semantic - P@5: 0.60, NDCG: 1.00, Relevant: 3/5
+Keyword - P@5: 0.80, NDCG: 0.96, Relevant: 4/5
+Hybrid - P@5: 0.60, NDCG: 0.97, Relevant: 3/5
+Evaluating query: films in Paris (Intent: location)
+Semantic search results: ['Forget Paris', 'Chrysalis', 'Red Rooms']
+Keyword search results: ['Pari', 'Forget Paris', 'Malcolm & Marie']
+Hybrid search results: ['Pari', 'Forget Paris', 'The End of Violence']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 0.80, NDCG: 0.98, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.96, Relevant: 4/5
+Evaluating query: movies filmed in Japan (Intent: location)
+Semantic search results: ['Tokyo Cowboy', 'The Accidental Detective 2: In Action', 'Black Rain']
+Keyword search results: ['Urban Legends: Final Cut', 'A Minecraft Movie', 'Kung Pow: Enter the Fist']
+Hybrid search results: ['Urban Legends: Final Cut', 'A Minecraft Movie', 'Godzilla Against MechaGodzilla']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: italian movies (Intent: location)
+Semantic search results: ['Vincere', 'The Sicilian', 'La Dolce Vita']
+Keyword search results: ['The Red Tent', 'A Minecraft Movie', 'Saranair: The Movie']
+Hybrid search results: ['The Red Tent', 'A Minecraft Movie', 'Saranair: The Movie']
+Semantic - P@5: 0.60, NDCG: 0.91, Relevant: 3/5
+Keyword - P@5: 0.60, NDCG: 0.71, Relevant: 3/5
+Hybrid - P@5: 0.80, NDCG: 0.76, Relevant: 4/5
+Evaluating query: indonesian horror films (Intent: location)
+Semantic search results: ['Grave Torture', 'Gonjiam: Haunted Asylum', 'The Unseeable']
+Keyword search results: ['Urban Legends: Final Cut', 'Little Shop of Horrors', 'Christopher Roth']
+Hybrid search results: ['Urban Legends: Final Cut', 'Grave Torture', 'Gonjiam: Haunted Asylum']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: highest rated action movies (Intent: rating)
+Semantic search results: ['Mad Max', 'Menace II Society', 'Guntur Kaaram']
+Keyword search results: ['A Minecraft Movie', 'Evita', 'Game 6']
+Hybrid search results: ['A Minecraft Movie', 'Game 6', 'Hey Ram']
+Semantic - P@5: 0.40, NDCG: 0.54, Relevant: 2/5
+Keyword - P@5: 0.80, NDCG: 0.96, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 0.90, Relevant: 4/5
+Evaluating query: best romantic films of all time (Intent: rating)
+Semantic search results: ['Before Sunrise', 'Let the Sunshine In', 'Gone with the Wind']
+Keyword search results: ['The Hangover Part III', 'Best of the Best 2', 'Disobedience']
+Hybrid search results: ['The Hangover Part III', 'Disobedience', 'Best of the Best 2']
+Semantic - P@5: 0.80, NDCG: 0.96, Relevant: 4/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: top sci-fi movies with great special effects (Intent: rating)
+Semantic search results: ['The Alien Factor', 'Star Wars: The Force Awakens', 'Mad Max']
+Keyword search results: ['Great Expectations', 'Invaders from Mars', 'Post Grad']
+Hybrid search results: ['Invaders from Mars', 'Great Expectations', 'Post Grad']
+Semantic - P@5: 0.80, NDCG: 0.98, Relevant: 4/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluating query: critically acclaimed documentaries (Intent: rating)
+Semantic search results: ['The Great Debaters', 'My Salinger Year', 'Observe and Report']
+Keyword search results: ['Daaaaaalí!', 'Fastest', 'Quest for Real Immunity']
+Hybrid search results: ['Daaaaaalí!', 'Fastest', 'Quest for Real Immunity']
+Semantic - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Keyword - P@5: 0.80, NDCG: 1.00, Relevant: 4/5
+Hybrid - P@5: 0.80, NDCG: 1.00, Relevant: 4/5
+Evaluating query: underrated comedy movies (Intent: rating)
+Semantic search results: ['The Amateur', 'I Declare War', 'Tremors']
+Keyword search results: ['A Minecraft Movie', 'Saranair: The Movie', 'Moby Dick']
+Hybrid search results: ['A Minecraft Movie', 'Saranair: The Movie', 'Mistress']
+Semantic - P@5: 0.80, NDCG: 0.98, Relevant: 4/5
+Keyword - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Hybrid - P@5: 1.00, NDCG: 1.00, Relevant: 5/5
+Evaluation completed. Results saved to C:\COOLIYAH\Semester 6\TBI\TK\movsearch-be\evaluation_results\llm_detailed_results_20250509_191508.json
+Finding optimal weights with 8 queries
+Testing weights: BM25=0.00, Vector=1.00
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 0.76
+  Query: movies with Tom Hanks... - P@5: 0.80, NDCG: 0.96
+  Query: best science fiction movies... - P@5: 0.40, NDCG: 0.50
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 1.00
+  Query: action movies with explosions ... - P@5: 0.80, NDCG: 0.98
+  Query: movies set in New York... - P@5: 0.40, NDCG: 0.62
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.76
+Average precision: 0.7250, Average NDCG: 0.8232
+Testing weights: BM25=0.20, Vector=0.80
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.60, NDCG: 0.97
+  Query: movies with Tom Hanks... - P@5: 0.80, NDCG: 0.98
+  Query: best science fiction movies... - P@5: 0.00, NDCG: 0.00
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 0.80, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.60, NDCG: 0.89
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.76
+Average precision: 0.6750, Average NDCG: 0.7946
+Testing weights: BM25=0.40, Vector=0.60
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 0.98
+  Query: movies with Tom Hanks... - P@5: 1.00, NDCG: 1.00
+  Query: best science fiction movies... - P@5: 0.20, NDCG: 0.39
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 1.00, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.60, NDCG: 0.95
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.76
+Average precision: 0.7750, Average NDCG: 0.8547
+Testing weights: BM25=0.60, Vector=0.40
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 1.00
+  Query: movies with Tom Hanks... - P@5: 1.00, NDCG: 1.00
+  Query: best science fiction movies... - P@5: 0.20, NDCG: 0.39
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 1.00, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.80, NDCG: 0.96
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.90
+Average precision: 0.8000, Average NDCG: 0.8760
+Testing weights: BM25=0.80, Vector=0.20
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 1.00
+  Query: movies with Tom Hanks... - P@5: 1.00, NDCG: 1.00
+  Query: best science fiction movies... - P@5: 0.20, NDCG: 0.39
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 1.00, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.80, NDCG: 0.96
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.90
+Average precision: 0.8000, Average NDCG: 0.8760
+Testing weights: BM25=1.00, Vector=0.00
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 0.98
+  Query: movies with Tom Hanks... - P@5: 1.00, NDCG: 1.00
+  Query: best science fiction movies... - P@5: 0.20, NDCG: 0.39
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 1.00, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.80, NDCG: 0.96
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.96
+Average precision: 0.8000, Average NDCG: 0.8803
+Weight optimization completed. Results saved to C:\COOLIYAH\Semester 6\TBI\TK\movsearch-be\evaluation_results\llm_weight_optimization_20250509_193435.json
+Best weights (precision): BM25=0.60, Vector=0.40 with precision 0.8000
+Best weights (NDCG): BM25=1.00, Vector=0.00 with NDCG 0.8803

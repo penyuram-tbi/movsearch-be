@@ -1,0 +1,64 @@
+Finding optimal weights with 8 queries
+Testing weights: BM25=0.00, Vector=1.00
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 0.76
+  Query: movies with Tom Hanks... - P@5: 0.80, NDCG: 0.96
+  Query: best science fiction movies... - P@5: 0.40, NDCG: 0.50
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 1.00
+  Query: action movies with explosions ... - P@5: 0.80, NDCG: 0.98
+  Query: movies set in New York... - P@5: 0.40, NDCG: 0.62
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.76
+Average precision: 0.7250, Average NDCG: 0.8232
+Testing weights: BM25=0.20, Vector=0.80
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.60, NDCG: 0.97
+  Query: movies with Tom Hanks... - P@5: 0.80, NDCG: 0.98
+  Query: best science fiction movies... - P@5: 0.00, NDCG: 0.00
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 0.80, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.60, NDCG: 0.89
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.76
+Average precision: 0.6750, Average NDCG: 0.7946
+Testing weights: BM25=0.40, Vector=0.60
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 0.98
+  Query: movies with Tom Hanks... - P@5: 1.00, NDCG: 1.00
+  Query: best science fiction movies... - P@5: 0.20, NDCG: 0.39
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 1.00, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.60, NDCG: 0.95
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.76
+Average precision: 0.7750, Average NDCG: 0.8547
+Testing weights: BM25=0.60, Vector=0.40
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 1.00
+  Query: movies with Tom Hanks... - P@5: 1.00, NDCG: 1.00
+  Query: best science fiction movies... - P@5: 0.20, NDCG: 0.39
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 1.00, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.80, NDCG: 0.96
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.90
+Average precision: 0.8000, Average NDCG: 0.8760
+Testing weights: BM25=0.80, Vector=0.20
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 1.00
+  Query: movies with Tom Hanks... - P@5: 1.00, NDCG: 1.00
+  Query: best science fiction movies... - P@5: 0.20, NDCG: 0.39
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 1.00, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.80, NDCG: 0.96
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.90
+Average precision: 0.8000, Average NDCG: 0.8760
+Testing weights: BM25=1.00, Vector=0.00
+  Query: The Shawshank Redemption... - P@5: 1.00, NDCG: 1.00
+  Query: Christopher Nolan movies... - P@5: 0.80, NDCG: 0.98
+  Query: movies with Tom Hanks... - P@5: 1.00, NDCG: 1.00
+  Query: best science fiction movies... - P@5: 0.20, NDCG: 0.39
+  Query: movies about artificial intell... - P@5: 0.80, NDCG: 0.76
+  Query: action movies with explosions ... - P@5: 1.00, NDCG: 1.00
+  Query: movies set in New York... - P@5: 0.80, NDCG: 0.96
+  Query: highest rated action movies... - P@5: 0.80, NDCG: 0.96
+Average precision: 0.8000, Average NDCG: 0.8803
+Weight optimization completed. Results saved to C:\COOLIYAH\Semester 6\TBI\TK\movsearch-be\evaluation_results\llm_weight_optimization_20250509_193435.json
+Best weights (precision): BM25=0.60, Vector=0.40 with precision 0.8000
+Best weights (NDCG): BM25=1.00, Vector=0.00 with NDCG 0.8803
