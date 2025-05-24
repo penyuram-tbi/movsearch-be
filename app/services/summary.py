@@ -16,72 +16,38 @@ _model = None
 _tokenizer = None
 
 def get_model_and_tokenizer():
-    """Smart model loading - GPU quantization if available, CPU fallback"""
     global _model, _tokenizer
     
     if _model is None or _tokenizer is None:
         model_name = "Qwen/Qwen2.5-0.5B-Instruct"
         
-        logger.info("Loading model with smart GPU/CPU detection...")
-        
         try:
-            # Check if bitsandbytes is available (GPU runtime)
-            import bitsandbytes
-            gpu_available = torch.cuda.is_available()
+            quantization_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_compute_dtype=torch.float16,
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_quant_type="nf4"
+            )
             
-            if gpu_available:
-                logger.info("🔥 GPU + bitsandbytes detected - using 4-bit quantization")
-                
-                # GPU-optimized quantization
-                quantization_config = BitsAndBytesConfig(
-                    load_in_4bit=True,
-                    bnb_4bit_compute_dtype=torch.float16,
-                    bnb_4bit_use_double_quant=True,
-                    bnb_4bit_quant_type="nf4"
-                )
-                
-                _model = AutoModelForCausalLM.from_pretrained(
-                    model_name,
-                    quantization_config=quantization_config,
-                    device_map="auto",
-                    torch_dtype=torch.float16,
-                    cache_dir='/app/model_cache'
-                )
-                
-                logger.info("✅ 4-bit quantized model loaded on GPU")
-                
-            else:
-                logger.info("⚠️ GPU not available, using CPU with fp16")
-                raise ImportError("Fallback to CPU")
-                
-        except ImportError:
-            # Fallback to CPU-only mode
-            logger.info("💻 Loading model in CPU-optimized mode...")
-            
-            _model = AutoModelForCausalLM.from_pretrained(
+            _tokenizer = AutoTokenizer.from_pretrained(
                 model_name,
-                torch_dtype=torch.float32,  # CPU-friendly
-                device_map="cpu",
                 cache_dir='/app/model_cache'
             )
             
-            logger.info("✅ CPU-optimized model loaded")
-        
-        # Load tokenizer (same for both modes)
-        _tokenizer = AutoTokenizer.from_pretrained(
-            model_name,
-            cache_dir='/app/model_cache'
-        )
-        
-        if _tokenizer.pad_token is None:
-            _tokenizer.pad_token = _tokenizer.eos_token
-        
-        # Log final status
-        if torch.cuda.is_available() and hasattr(_model, 'hf_quantizer'):
-            memory_used = torch.cuda.memory_allocated() / 1024**3
-            logger.info(f"📊 GPU memory usage: {memory_used:.1f}GB")
-        else:
-            logger.info("📊 Running on CPU")
+            _model = AutoModelForCausalLM.from_pretrained(
+                model_name,
+                quantization_config=quantization_config,
+                device_map="auto",
+                torch_dtype=torch.float16,
+                cache_dir='/app/model_cache'
+            )
+            
+            if _tokenizer.pad_token is None:
+                _tokenizer.pad_token = _tokenizer.eos_token
+                
+        except Exception as e:
+            logger.error(f"Model loading failed: {e}")
+            raise e
     
     return _model, _tokenizer
 

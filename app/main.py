@@ -37,36 +37,16 @@ app.include_router(
 )
 @app.on_event("startup")
 async def startup_event():
-    """GPU-optimized model preloading"""
     try:
-        logger.info("🚀 Starting GPU-optimized API...")
-        
-        # Set cache paths
         os.environ['TRANSFORMERS_CACHE'] = '/app/model_cache'
         os.environ['HF_HOME'] = '/app/model_cache'
         
-        # Check GPU availability
-        if torch.cuda.is_available():
-            gpu_name = torch.cuda.get_device_name(0)
-            logger.info(f"🔥 GPU detected: {gpu_name}")
-        else:
-            logger.warning("⚠️ No GPU detected, using CPU")
-        
-        # Preload models
-        logger.info("🧠 Preloading quantized LLM...")
         from app.services.summary import get_model_and_tokenizer
         get_model_and_tokenizer()
-        logger.info("✅ LLM ready for GPU inference")
-        
-        # Preload sentence transformer
-        from app.services.vector import model as sentence_model
-        logger.info("✅ Sentence Transformer ready")
-        
-        logger.info("🎉 GPU-optimized API fully initialized!")
+        logger.info("Models loaded successfully")
         
     except Exception as e:
-        logger.error(f"❌ Startup error: {e}")
-        # Continue startup even if models fail to load
+        logger.error(f"Startup error: {e}")
 
 @app.get("/", tags=["status"])
 async def root():
@@ -79,28 +59,19 @@ async def root():
         "version": "1.0.0"
     }
 
-@app.get("/health", tags=["status"])
+@app.get("/health")
 async def health_check():
-    """GPU-aware health check"""
     try:
-        # Check GPU status
+        import torch
         gpu_available = torch.cuda.is_available()
-        gpu_memory = None
         
-        if gpu_available:
-            gpu_memory = f"{torch.cuda.get_device_properties(0).total_memory // 1024**3}GB"
-        
-        # Check models
         from app.services.summary import _model, _tokenizer
         models_loaded = _model is not None and _tokenizer is not None
         
         return {
             "status": "healthy",
             "gpu_available": gpu_available,
-            "gpu_memory": gpu_memory,
-            "models_loaded": models_loaded,
-            "quantization": "4-bit",
-            "service": "movie-search-api-gpu"
+            "models_loaded": models_loaded
         }
     except Exception as e:
         return {"status": "error", "detail": str(e)}
