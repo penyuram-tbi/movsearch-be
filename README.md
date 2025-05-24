@@ -1,5 +1,3 @@
-
-
 # Movie Search (MOVSEARCH) API (Backend)
 
 Repositori ini berisi _backend_ untuk **Movie Search Engine** yang memanfaatkan **Elasticsearch** dan model *sentence-transformers* guna menyediakan pencarian semantik maupun pencarian berbasis kata kunci.
@@ -25,6 +23,65 @@ Repositori ini dibuat sebagai bagian dari proyek akhir mata kuliah Temu Balik In
 
 ---
 
+## Arsitektur & Cara Kerja Sistem
+
+### Backend (FastAPI & Elasticsearch)
+
+#### Komponen Utama
+- **FastAPI**: Menyediakan RESTful API yang skalabel dan asinkron
+- **Elasticsearch**: Database dan mesin pencari yang menyimpan film beserta embedding vektor
+- **Sentence Transformers**: Model bahasa yang mengubah teks menjadi representasi vektor (embeddings)
+
+#### Alur Kerja Pencarian
+1. **Preprocessing Data**:
+   - Film dari dataset diproses menggunakan script `index_data.py`
+   - Setiap film dikonversi menjadi dokumen Elasticsearch dengan embedding vektor menggunakan `sentence-transformers`
+   - Metadata film (judul, deskripsi, genre, dll) disimpan sebagai field yang dapat dicari
+
+2. **Pencarian Semantik**:
+   - Ketika pengguna mengirim query, teks query diubah menjadi embedding vektor
+   - Backend menghitung kemiripan kosinus antara vektor query dan vektor dokumen film
+   - Film dengan skor kemiripan tertinggi dikembalikan sebagai hasil
+
+3. **Pencarian Kata Kunci (Keyword)**:
+   - Menggunakan fitur pencarian teks lengkap Elasticsearch (BM25)
+   - Field penting seperti judul film diberi bobot lebih tinggi dalam pencarian
+
+4. **Pencarian Hybrid**:
+   - Menggabungkan skor dari pencarian semantik dan kata kunci
+   - Parameter bobot dapat disesuaikan untuk menyeimbangkan kedua metode
+
+5. **Pemfilteran Hasil**:
+   - Pengguna dapat memfilter hasil berdasarkan tahun rilis, rating, genre, dll
+   - Filter diterapkan setelah pencarian untuk mempersempit hasil
+
+### Frontend (Next.js)
+
+#### Komponen Utama
+- **Next.js**: Framework React untuk rendering sisi klien dan server
+- **Shadcn UI**: Komponen UI untuk antarmuka yang responsif dan modern
+- **API Client**: Menangani komunikasi dengan backend
+
+#### Alur Kerja Antarmuka
+1. **Halaman Utama**:
+   - Pencarian sederhana dengan opsi beralih antara mode pencarian
+   - Filter tambahan untuk mempersempit hasil berdasarkan berbagai kriteria
+
+2. **Halaman Hasil Pencarian**:
+   - Menampilkan film yang sesuai dengan query
+   - Card film dengan informasi dasar dan opsi untuk melihat detail
+
+3. **Halaman Detail Film**:
+   - Informasi lengkap tentang film yang dipilih
+   - Metadata seperti tahun rilis, rating, genre, sinopsis, dll
+
+4. **Fitur UI Lainnya**:
+   - Pemfilteran dinamis berdasarkan berbagai kriteria
+   - Toggle untuk beralih antara mode pencarian
+   - Antarmuka responsif untuk berbagai ukuran layar
+
+---
+
 ## Teknologi
 
 - **Python ≥ 3.10**
@@ -32,6 +89,9 @@ Repositori ini dibuat sebagai bagian dari proyek akhir mata kuliah Temu Balik In
 - **Elasticsearch (Server v8+)**  
 - **sentence-transformers** (`all-MiniLM-L6-v2`, dimensi 384)  
 - **Uvicorn** (ASGI server)
+- **Next.js** (Frontend)
+- **TypeScript** 
+- **Shadcn UI Components** 
 
 ---
 
@@ -40,6 +100,7 @@ Repositori ini dibuat sebagai bagian dari proyek akhir mata kuliah Temu Balik In
 1. **Python** terinstal (direkomendasikan menggunakan *virtual environment*).
 2. **Elasticsearch v8** sudah berjalan & memiliki API-Key dan ES-URL (mode *elastic-cloud* maupun self-hosted dengan `xpack.security` aktif).
 3. File CSV yang akan di-indeks (contoh: `app/data/testSample.csv`).
+4. **Node.js** dan **npm/pnpm** untuk frontend.
 
 ---
 
@@ -95,15 +156,40 @@ Argumen --recreate akan menghapus indeks lama & membuat ulang struktur mapping s
 uvicorn app.main:app --reload    # Akses http://127.0.0.1:8000
 ```
 
+## Menjalankan Frontend
+```bash
+# 1. Pindah ke direktori frontend
+cd ../movsearch-fe
+
+# 2. Install dependencies
+npm install
+# atau
+pnpm install
+
+# 3. Jalankan server development
+npm run dev
+# atau
+pnpm dev
+
+# Akses http://localhost:3000 di browser
+```
+
 ## REST API
 
 | Metode | Endpoint                | Deskripsi                                                               |
 | ------ | ----------------------- | ----------------------------------------------------------------------- |
-| `POST` | `/api/v1/movies/search` | Pencarian **semantik**; badan permintaan mengikuti model `QueryRequest` |
-| `POST` | `/api/v1/movies/search` | Pencarian **hybrid**; badan permintaan mengikuti model `QueryRequest` |
+| `POST` | `/api/v1/movies/semantic-search` | Pencarian **semantik**; badan permintaan mengikuti model `QueryRequest` |
+| `POST` | `/api/v1/movies/hybrid-search` | Pencarian **hybrid**; badan permintaan mengikuti model `QueryRequest` dengan opsi pengaturan bobot |
+| `POST` | `/api/v1/movies/keyword-search` | Pencarian **kata kunci**; badan permintaan mengikuti model `KeywordSearchRequest` |
 | `GET`  | `/api/v1/movies/search` | Pencarian **kata kunci** + filter query-param                           |
 | `GET`  | `/api/v1/movies/{id}`   | Ambil detail film berdasarkan ID                                        |
 
+## Evaluasi & Optimasi Pencarian
 
+Proyek ini menyertakan modul evaluasi di `app/evaluation/` untuk mengukur dan mengoptimalkan kualitas pencarian:
 
+- **LLM Evaluator**: Menggunakan model bahasa untuk mengevaluasi relevansi hasil pencarian
+- **Optimasi Bobot**: Pencarian bobot optimal antara pencarian semantik dan kata kunci
+- **Metrik**: Metrik evaluasi standar termasuk precision, recall, dan F1-score
 
+Hasil evaluasi tersimpan di direktori `evaluation_results/` untuk analisis lebih lanjut.
