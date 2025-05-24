@@ -16,53 +16,72 @@ _model = None
 _tokenizer = None
 
 def get_model_and_tokenizer():
-    """GPU-optimized model loading with 4-bit quantization"""
+    """Smart model loading - GPU quantization if available, CPU fallback"""
     global _model, _tokenizer
     
     if _model is None or _tokenizer is None:
         model_name = "Qwen/Qwen2.5-0.5B-Instruct"
         
-        logger.info("Loading GPU-optimized 4-bit quantized model...")
-        
-        # GPU-optimized quantization config
-        quantization_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_compute_dtype=torch.float16,
-            bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type="nf4"
-        )
+        logger.info("Loading model with smart GPU/CPU detection...")
         
         try:
-            # Load tokenizer
-            _tokenizer = AutoTokenizer.from_pretrained(
-                model_name,
-                cache_dir='/app/model_cache',
-                trust_remote_code=True
-            )
+            # Check if bitsandbytes is available (GPU runtime)
+            import bitsandbytes
+            gpu_available = torch.cuda.is_available()
             
-            # Load model with GPU optimization
+            if gpu_available:
+                logger.info("🔥 GPU + bitsandbytes detected - using 4-bit quantization")
+                
+                # GPU-optimized quantization
+                quantization_config = BitsAndBytesConfig(
+                    load_in_4bit=True,
+                    bnb_4bit_compute_dtype=torch.float16,
+                    bnb_4bit_use_double_quant=True,
+                    bnb_4bit_quant_type="nf4"
+                )
+                
+                _model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    quantization_config=quantization_config,
+                    device_map="auto",
+                    torch_dtype=torch.float16,
+                    cache_dir='/app/model_cache'
+                )
+                
+                logger.info("✅ 4-bit quantized model loaded on GPU")
+                
+            else:
+                logger.info("⚠️ GPU not available, using CPU with fp16")
+                raise ImportError("Fallback to CPU")
+                
+        except ImportError:
+            # Fallback to CPU-only mode
+            logger.info("💻 Loading model in CPU-optimized mode...")
+            
             _model = AutoModelForCausalLM.from_pretrained(
                 model_name,
-                quantization_config=quantization_config,
-                device_map="auto",  # Auto GPU mapping
-                torch_dtype=torch.float16,
-                cache_dir='/app/model_cache',
-                trust_remote_code=True
+                torch_dtype=torch.float32,  # CPU-friendly
+                device_map="cpu",
+                cache_dir='/app/model_cache'
             )
             
-            if _tokenizer.pad_token is None:
-                _tokenizer.pad_token = _tokenizer.eos_token
-            
-            # Log GPU usage
-            if torch.cuda.is_available():
-                memory_used = torch.cuda.memory_allocated() / 1024**3
-                logger.info(f"✅ Model loaded on GPU, using {memory_used:.1f}GB VRAM")
-            else:
-                logger.info("✅ Model loaded on CPU")
-                
-        except Exception as e:
-            logger.error(f"❌ Error loading model: {e}")
-            raise e
+            logger.info("✅ CPU-optimized model loaded")
+        
+        # Load tokenizer (same for both modes)
+        _tokenizer = AutoTokenizer.from_pretrained(
+            model_name,
+            cache_dir='/app/model_cache'
+        )
+        
+        if _tokenizer.pad_token is None:
+            _tokenizer.pad_token = _tokenizer.eos_token
+        
+        # Log final status
+        if torch.cuda.is_available() and hasattr(_model, 'hf_quantizer'):
+            memory_used = torch.cuda.memory_allocated() / 1024**3
+            logger.info(f"📊 GPU memory usage: {memory_used:.1f}GB")
+        else:
+            logger.info("📊 Running on CPU")
     
     return _model, _tokenizer
 
@@ -174,6 +193,6 @@ def create_movie_summary(movies: List[Dict[Any, Any]], query: str = "") -> str:
     gc.collect()
 
     logger.debug("GPU memory cleaned")
-    
+
     # Clean up any trailing/leading whitespace
     return response.strip()

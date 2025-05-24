@@ -7,11 +7,10 @@ pydantic-settings==2.0.0
 elasticsearch>=8.8.0
 sentence-transformers>=2.2.2
 
-# GPU-optimized AI/ML stack
+# AI/ML stack (NO bitsandbytes - installed at runtime)
 transformers>=4.35.0
 torch>=2.0.0
 accelerate>=0.20.0
-bitsandbytes>=0.41.0
 optimum>=1.13.0
 
 # Utilities
@@ -21,5 +20,4 @@ python-dotenv>=1.0.0
 httpx>=0.24.0
 typing-extensions==4.13.2
 
-# GPU monitoring (optional)
-gpustat>=1.0.0
+# Note: bitsandbytes installed dynamically at runtime if GPU detected
